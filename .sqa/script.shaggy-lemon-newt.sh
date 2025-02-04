@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerpyo &&
-    PyOphidia --path .
+    pyophidia --path .
 )
