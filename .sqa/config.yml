@@ -1,0 +1,64 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.3.0
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/PalomoIFCA/testerpyo:
+      branch: main
+      repo: https://github.com/PalomoIFCA/testerpyo
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.flaky-ultramarine-setter.sh
+        container: qc.acc_messy-vermilion-numbat
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/testerpyo find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.shabby-gamboge-flamingo.sh
+        container: qc.doc_squirrely-scarlet-caterpillar
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.frumpy-cinnamon-balinese.sh
+        container: qc.doc_pokey-thistle-wolfhound
+      github.com/PalomoIFCA/testerpyo markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.bumpy-jade-ibis.sh
+        container: qc.doc_randy-cyan-turtle
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/testerpyo licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.geeky-saffron-echidna.sh
+        container: qc.lic_thirsty-heliotrope-moth
+  QC.Sec:
+    repos:
+      github.com/PalomoIFCA/testerpyo bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.skanky-mustard-burmese.sh
+        container: qc.sec_pretty-thistle-javanese
+  QC.Sty:
+    repos:
+      github.com/PalomoIFCA/testerpyo PyOphidia:
+        commands:
+        - /usr/bin/env sh .sqa/script.muggy-wheat-olm.sh
+        container: qc.sty_craggy-rose-quail
+  QC.Uni:
+    repos:
+      github.com/PalomoIFCA/testerpyo pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.chummy-platinum-spitz.sh
+        container: qc.uni_breezy-khaki-vole
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/testerpyo get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.tasty-cobalt-llama.sh
+        container: qc.ver_sleepy-malachite-goat
+timeout: 5400
