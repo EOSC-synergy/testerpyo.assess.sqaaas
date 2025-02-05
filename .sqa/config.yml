@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/Ophidia
+      branch: release/2.3.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
       branch: positive
@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-auburn-angelfish.sh
-        container: qc.acc_chummy-gold-raccoon
+        - /usr/bin/env sh .sqa/script.sunny-sepia-fossa.sh
+        container: qc.acc_lovely-ruby-macaw
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-brown-tiger.sh
-        container: qc.doc_baggy-sapphire-paradise
+        - /usr/bin/env sh .sqa/script.goopy-black-spitz.sh
+        container: qc.doc_droopy-corn-zebu
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-brown-grasshopper.sh
-        container: qc.doc_shaggy-ruby-hedgehog
+        - /usr/bin/env sh .sqa/script.sunny-asparagus-weasel.sh
+        container: qc.doc_gummy-mauve-meerkat
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-alizarin-birman.sh
-        container: qc.doc_randy-flax-seahorse
+        - /usr/bin/env sh .sqa/script.cranky-teal-mist.sh
+        container: qc.doc_paltry-cornflower-blue
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-cyan-caiman.sh
-        container: qc.lic_muzzy-green-manatee
+        - /usr/bin/env sh .sqa/script.boozy-azure-bonobo.sh
+        container: qc.lic_craggy-silver-caiman
   QC.Sec:
     repos:
       github.com/PalomoIFCA/testerpyo bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-wisteria-yak.sh
-        container: qc.sec_cranky-mustard-snail
+        - /usr/bin/env sh .sqa/script.cheeky-ochre-angora.sh
+        container: qc.sec_pokey-black-bordeaux
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-lemon-retriever.sh
-        container: qc.sty_sunny-black-chicken
+        - /usr/bin/env sh .sqa/script.pretty-black-cockroach.sh
+        container: qc.sty_stinky-malachite-snail
   QC.Uni:
     repos:
       github.com/PalomoIFCA/testerpyo pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-rust-pig.sh
-        container: qc.uni_wheezy-corn-havanese
+        - /usr/bin/env sh .sqa/script.snippy-gold-abyssinian.sh
+        container: qc.uni_chewy-black-orangutan
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-chartreuse-beaver.sh
-        container: qc.ver_snazzy-sangria-lemming
+        - /usr/bin/env sh .sqa/script.randy-ochre-goat.sh
+        container: qc.ver_scanty-cream-neanderthal
 timeout: 5400
