@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/Ophidia
+      branch: release/2.3.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
       branch: positive
@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-cyan-spitz.sh
-        container: qc.acc_lovely-grey-swan
+        - /usr/bin/env sh .sqa/script.gamy-zucchini-clam.sh
+        container: qc.acc_flaky-lemon-jaguar
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-cobalt-bracke.sh
-        container: qc.doc_stealthy-denim-tortoise
+        - /usr/bin/env sh .sqa/script.tasty-grey-chamois.sh
+        container: qc.doc_hazy-amethyst-echidna
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-pink-beetle.sh
-        container: qc.doc_stuffy-periwinkle-corgi
+        - /usr/bin/env sh .sqa/script.cloudy-sepia-cheetah.sh
+        container: qc.doc_greasy-gold-beetle
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-taupe-chameleon.sh
-        container: qc.doc_seedy-tomato-butterfly
+        - /usr/bin/env sh .sqa/script.pretty-zucchini-llama.sh
+        container: qc.doc_breezy-olive-tuatara
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-wisteria-russel.sh
-        container: qc.lic_craggy-cyan-sheep
+        - /usr/bin/env sh .sqa/script.pasty-ruby-goat.sh
+        container: qc.lic_frumpy-alizarin-fish
   QC.Sec:
     repos:
       github.com/PalomoIFCA/testerpyo bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-rust-armadillo.sh
-        container: qc.sec_lanky-cardinal-starfish
+        - /usr/bin/env sh .sqa/script.wheezy-indigo-spaniel.sh
+        container: qc.sec_seedy-cardinal-boar
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-scarlet-toucan.sh
-        container: qc.sty_muzzy-mustard-cheetah
+        - /usr/bin/env sh .sqa/script.frumpy-yellow-retriever.sh
+        container: qc.sty_zippy-burgundy-salamander
   QC.Uni:
     repos:
       github.com/PalomoIFCA/testerpyo pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-rust-discus.sh
-        container: qc.uni_queasy-flax-bulldog
+        - /usr/bin/env sh .sqa/script.thirsty-cornflower-indri.sh
+        container: qc.uni_lovely-seashell-cassowary
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-scarlet-donkey.sh
-        container: qc.ver_cozy-zucchini-zonkey
+        - /usr/bin/env sh .sqa/script.queasy-periwinkle-robin.sh
+        container: qc.ver_geeky-taupe-squid
 timeout: 5400
