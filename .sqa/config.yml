@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-magnolia-shark.sh
-        container: qc.acc_queasy-plum-iguana
+        - /usr/bin/env sh .sqa/script.shaggy-black-setter.sh
+        container: qc.acc_shaky-sepia-fox
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-pear-liger.sh
-        container: qc.doc_homely-cream-husky
+        - /usr/bin/env sh .sqa/script.sloppy-olivine-oyster.sh
+        container: qc.doc_seedy-aqua-weasel
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-emerald-akita.sh
-        container: qc.doc_grumpy-cream-woodlouse
+        - /usr/bin/env sh .sqa/script.bluesy-copper-crane.sh
+        container: qc.doc_ready-beige-caterpillar
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-green-slug.sh
-        container: qc.doc_nippy-chartreuse-emu
+        - /usr/bin/env sh .sqa/script.hilly-black-dogfish.sh
+        container: qc.doc_crabby-ruby-buffalo
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-gold-rattlesnake.sh
-        container: qc.lic_gamy-cerise-dachsbracke
+        - /usr/bin/env sh .sqa/script.thirsty-red-zonkey.sh
+        container: qc.lic_craggy-rust-tang
   QC.Sec:
     repos:
       github.com/PalomoIFCA/testerpyo bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-tomato-cichlid.sh
-        container: qc.sec_tasty-bronze-dogfish
+        - /usr/bin/env sh .sqa/script.wiggy-coral-caracal.sh
+        container: qc.sec_geeky-emerald-walrus
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-zucchini-ragdoll.sh
-        container: qc.sty_homey-maroon-zorse
+        - /usr/bin/env sh .sqa/script.geeky-periwinkle-cockroach.sh
+        container: qc.sty_foggy-rose-hedgehog
   QC.Uni:
     repos:
       github.com/PalomoIFCA/testerpyo pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-sapphire-dragonfly.sh
-        container: qc.uni_droopy-thistle-eleuth
+        - /usr/bin/env sh .sqa/script.craggy-peach-wallaby.sh
+        container: qc.uni_dorky-brass-sheepdog
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-persimmon-cichlid.sh
-        container: qc.ver_woolly-champagne-oriole
+        - /usr/bin/env sh .sqa/script.homey-orchid-meerkat.sh
+        container: qc.ver_cloudy-blue-mongrel
 timeout: 5400
