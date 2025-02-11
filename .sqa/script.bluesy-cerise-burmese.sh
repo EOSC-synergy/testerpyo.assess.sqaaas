@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerpyo &&
-    pyophidia --path .
+    find_oph_workflows.py --path .
 )
