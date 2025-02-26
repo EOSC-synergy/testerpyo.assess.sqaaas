@@ -11,54 +11,10 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
-  QC.Acc:
-    repos:
-      github.com/PalomoIFCA/testerpyo git:
-        commands:
-        - /usr/bin/env sh .sqa/script.dorky-goldenrod-birman.sh
-        container: qc.acc_skinny-carmine-tortoise
-  QC.Doc:
-    repos:
-      github.com/PalomoIFCA/testerpyo find_doc_files.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.lumpy-magenta-alligator.sh
-        container: qc.doc_hazy-wisteria-heron
-      github.com/PalomoIFCA/testerpyo git:
-        commands:
-        - /usr/bin/env sh .sqa/script.muzzy-alizarin-chin.sh
-        container: qc.doc_zippy-chartreuse-dalmatian
-      github.com/PalomoIFCA/testerpyo markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.chewy-persimmon-akbash.sh
-        container: qc.doc_bumpy-brown-wolf
-  QC.Lic:
-    repos:
-      github.com/PalomoIFCA/testerpyo licensee:
-        commands:
-        - /usr/bin/env sh .sqa/script.stinky-platinum-harrier.sh
-        container: qc.lic_randy-chestnut-tapir
-  QC.Sec:
-    repos:
-      github.com/PalomoIFCA/testerpyo bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.pretty-chartreuse-olm.sh
-        container: qc.sec_zippy-cornflower-dormouse
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-cinnamon-tuatara.sh
-        container: qc.sty_wiggy-violet-antelope
-  QC.Uni:
-    repos:
-      github.com/PalomoIFCA/testerpyo pytest:
-        commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-tan-toad.sh
-        container: qc.uni_jumpy-fuchsia-foxhound
-  QC.Ver:
-    repos:
-      github.com/PalomoIFCA/testerpyo get_git_tags.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.nippy-celadon-neanderthal.sh
-        container: qc.ver_geeky-coral-dhole
+        - /usr/bin/env sh .sqa/script.trippy-cerise-mammoth.sh
+        container: qc.sty_dorky-vermilion-molly
 timeout: 5400
