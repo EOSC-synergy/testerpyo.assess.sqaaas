@@ -1,5 +1,5 @@
 services:
-  qc.sty_dorky-rust-goose:
+  qc.sty_cheeky-ecru-lemming:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
