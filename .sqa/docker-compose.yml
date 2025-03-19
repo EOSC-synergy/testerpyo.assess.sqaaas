@@ -1,5 +1,5 @@
 services:
-  qc.sty_beady-goldenrod-dachshund:
+  qc.sty_snazzy-magenta-devil:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
