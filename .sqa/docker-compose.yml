@@ -1,5 +1,5 @@
 services:
-  qc.sty_homey-ruby-chameleon:
+  qc.sty_lovely-white-snake:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
