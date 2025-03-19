@@ -5,7 +5,7 @@ config:
       branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
-      branch: main
+      branch: negative
       repo: https://github.com/PalomoIFCA/testerpyo
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-malachite-raccoon.sh
-        container: qc.sty_sloppy-gold-squirrel
+        - /usr/bin/env sh .sqa/script.randy-carmine-goose.sh
+        container: qc.sty_craggy-indigo-chipmunk
 timeout: 5400
