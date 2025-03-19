@@ -1,5 +1,5 @@
 services:
-  qc.sty_tacky-viridian-quetzal:
+  qc.sty_trippy-orchid-mongoose:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
