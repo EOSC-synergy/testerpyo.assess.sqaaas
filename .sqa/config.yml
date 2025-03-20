@@ -2,19 +2,67 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/Ophidia
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
-      branch: main
+      branch: testingactions
       repo: https://github.com/PalomoIFCA/testerpyo
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.sunny-violet-discus.sh
+        container: qc.acc_homey-sangria-dollar
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/testerpyo find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.gimpy-tomato-terrier.sh
+        container: qc.doc_slaphappy-gold-sloth
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.squirrely-carmine-catfish.sh
+        container: qc.doc_surly-lime-centipede
+      github.com/PalomoIFCA/testerpyo markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.jumpy-maroon-clam.sh
+        container: qc.doc_blurry-cardinal-akbash
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/testerpyo licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.craggy-turquoise-labradoodle.sh
+        container: qc.lic_nerdy-tomato-donkey
+  QC.Sec:
+    repos:
+      github.com/PalomoIFCA/testerpyo bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.zippy-denim-gorilla.sh
+        container: qc.sec_flimsy-olive-hummingbird
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
+      github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-malachite-raccoon.sh
-        container: qc.sty_sloppy-gold-squirrel
+        - /usr/bin/env sh .sqa/script.muggy-wisteria-meerkat.sh
+        container: qc.sty_surly-cornflower-kangaroo
+      github.com/PalomoIFCA/testerpyo jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.jumpy-smalt-rattlesnake.sh
+        container: qc.sty_woolly-chocolate-chamois
+  QC.Uni:
+    repos:
+      github.com/PalomoIFCA/testerpyo pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.snippy-black-discus.sh
+        container: qc.uni_beady-beige-hornet
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/testerpyo get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.cranky-vermilion-markhor.sh
+        container: qc.ver_surly-pink-gopher
 timeout: 5400
