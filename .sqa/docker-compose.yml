@@ -1,5 +1,5 @@
 services:
-  qc.sty_smelly-viridian-emu:
+  qc.sty_lanky-persimmon-sparrow:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
