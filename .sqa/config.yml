@@ -11,10 +11,54 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.pasty-thistle-warthog.sh
+        container: qc.acc_homely-beige-ant
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/testerpyo find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.jumpy-rust-ibis.sh
+        container: qc.doc_baggy-flax-monkey
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.chewy-cinnabar-owl.sh
+        container: qc.doc_leaky-burgundy-llama
+      github.com/PalomoIFCA/testerpyo markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.whiny-maroon-worm.sh
+        container: qc.doc_freaky-carmine-collie
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/testerpyo licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.snoopy-azure-yak.sh
+        container: qc.lic_tasty-olivine-bloodhound
+  QC.Sec:
+    repos:
+      github.com/PalomoIFCA/testerpyo bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.pretty-pear-eel.sh
+        container: qc.sec_fuzzy-ultramarine-zonkey
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-lilac-markhor.sh
-        container: qc.sty_lanky-persimmon-sparrow
+        - /usr/bin/env sh .sqa/script.queasy-aqua-husky.sh
+        container: qc.sty_bumpy-taupe-flamingo
+  QC.Uni:
+    repos:
+      github.com/PalomoIFCA/testerpyo pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.ready-tangerine-camel.sh
+        container: qc.uni_frumpy-cerulean-buffalo
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/testerpyo get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.hilly-lemon-peccary.sh
+        container: qc.ver_scummy-puce-crab
 timeout: 5400
