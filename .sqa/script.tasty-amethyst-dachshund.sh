@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerpyo &&
-    flake8 .
+    find_oph_workflows.py --path . --args arguments.json
 )
