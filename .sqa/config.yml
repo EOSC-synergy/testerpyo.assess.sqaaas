@@ -11,58 +11,10 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
-  QC.Acc:
-    repos:
-      github.com/PalomoIFCA/testerpyo git:
-        commands:
-        - /usr/bin/env sh .sqa/script.beady-burgundy-coati.sh
-        container: qc.acc_leaky-goldenrod-frog
-  QC.Doc:
-    repos:
-      github.com/PalomoIFCA/testerpyo find_doc_files.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.thirsty-ultramarine-wallaby.sh
-        container: qc.doc_gloppy-beige-olm
-      github.com/PalomoIFCA/testerpyo git:
-        commands:
-        - /usr/bin/env sh .sqa/script.craggy-tangerine-bloodhound.sh
-        container: qc.doc_slaphappy-lemon-monkey
-      github.com/PalomoIFCA/testerpyo markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.hilly-amber-manatee.sh
-        container: qc.doc_stinky-bistre-blue
-  QC.Lic:
-    repos:
-      github.com/PalomoIFCA/testerpyo licensee:
-        commands:
-        - /usr/bin/env sh .sqa/script.wiggy-persimmon-tortoise.sh
-        container: qc.lic_silly-amber-akita
-  QC.Sec:
-    repos:
-      github.com/PalomoIFCA/testerpyo bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.crabby-magnolia-snake.sh
-        container: qc.sec_stinky-malachite-crocodile
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo flake8:
+      github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-wisteria-fly.sh
-        container: qc.sty_gimpy-chocolate-mau
-      github.com/PalomoIFCA/testerpyo jsonlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.seedy-cerulean-wombat.sh
-        container: qc.sty_dorky-ultramarine-gar
-  QC.Uni:
-    repos:
-      github.com/PalomoIFCA/testerpyo pytest:
-        commands:
-        - /usr/bin/env sh .sqa/script.frumpy-bronze-camel.sh
-        container: qc.uni_slimy-cobalt-lizard
-  QC.Ver:
-    repos:
-      github.com/PalomoIFCA/testerpyo get_git_tags.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.goopy-gamboge-grasshopper.sh
-        container: qc.ver_skanky-khaki-chinchilla
+        - /usr/bin/env sh .sqa/script.hasty-taupe-moose.sh
+        container: qc.sty_pasty-firebrick-frigatebird
 timeout: 5400
