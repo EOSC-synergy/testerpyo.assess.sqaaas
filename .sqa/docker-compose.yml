@@ -1,5 +1,5 @@
 services:
-  qc.sty_randy-malachite-eagle:
+  qc.sty_slaphappy-pink-seahorse:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
