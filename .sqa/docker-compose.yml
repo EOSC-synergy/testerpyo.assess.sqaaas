@@ -1,5 +1,5 @@
 services:
-  qc.sty_fuzzy-viridian-bloodhound:
+  qc.sty_sloppy-myrtle-lobster:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile

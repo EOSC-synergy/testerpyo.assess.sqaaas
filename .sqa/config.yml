@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-thistle-barracuda.sh
-        container: qc.sty_fuzzy-viridian-bloodhound
+        - /usr/bin/env sh .sqa/script.smelly-seashell-avocet.sh
+        container: qc.sty_sloppy-myrtle-lobster
 timeout: 5400
