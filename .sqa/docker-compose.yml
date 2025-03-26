@@ -1,5 +1,5 @@
 services:
-  qc.sty_woolly-silver-booby:
+  qc.sty_sickly-burgundy-dodo:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
