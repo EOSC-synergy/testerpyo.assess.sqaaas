@@ -1,5 +1,5 @@
 services:
-  qc.sty_homey-amaranth-emu:
+  qc.sty_flimsy-taupe-bulldog:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
