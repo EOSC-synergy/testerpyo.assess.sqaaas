@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-alizarin-lemur.sh
-        container: qc.sty_slaphappy-pink-seahorse
+        - /usr/bin/env sh .sqa/script.snazzy-bistre-affenpinscher.sh
+        container: qc.sty_sleepy-harlequin-lizard
 timeout: 5400
