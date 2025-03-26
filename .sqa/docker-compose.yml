@@ -1,5 +1,5 @@
 services:
-  qc.sty_sleepy-harlequin-lizard:
+  qc.sty_pretty-coral-rottweiler:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
