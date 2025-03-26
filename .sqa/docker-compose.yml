@@ -1,5 +1,5 @@
 services:
-  qc.sty_lousy-amber-beetle:
+  qc.sty_randy-malachite-eagle:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
