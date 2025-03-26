@@ -1,5 +1,5 @@
 services:
-  qc.sty_clammy-plum-chicken:
+  qc.sty_wiggy-gamboge-toad:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
