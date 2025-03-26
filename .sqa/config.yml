@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-taupe-moose.sh
-        container: qc.sty_pasty-firebrick-frigatebird
+        - /usr/bin/env sh .sqa/script.gimpy-wisteria-meerkat.sh
+        container: qc.sty_lousy-amber-beetle
 timeout: 5400

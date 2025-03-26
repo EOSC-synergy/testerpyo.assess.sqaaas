@@ -1,5 +1,5 @@
 services:
-  qc.sty_pasty-firebrick-frigatebird:
+  qc.sty_lousy-amber-beetle:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
