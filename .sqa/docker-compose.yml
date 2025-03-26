@@ -1,5 +1,5 @@
 services:
-  qc.sty_flimsy-taupe-bulldog:
+  qc.sty_slaphappy-celadon-budgerigar:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
