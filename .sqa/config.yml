@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo commands:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-brown-wildebeest.sh
-        container: qc.uni_messy-cobalt-gharial
+        - /usr/bin/env sh .sqa/script.hilly-plum-heron.sh
+        container: qc.uni_ugly-yellow-heron
 timeout: 5400

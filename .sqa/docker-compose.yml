@@ -1,5 +1,5 @@
 services:
-  qc.uni_messy-cobalt-gharial:
+  qc.uni_ugly-yellow-heron:
     command: sleep 6000000
     image: sqaaas_yprov:v1.0
     volumes:
