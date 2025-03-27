@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-cobalt-starfish.sh
-        container: qc.sty_bumpy-chartreuse-snail
+        - /usr/bin/env sh .sqa/script.skinny-sapphire-magpie.sh
+        container: qc.sty_gloppy-harlequin-angelfish
 timeout: 5400
