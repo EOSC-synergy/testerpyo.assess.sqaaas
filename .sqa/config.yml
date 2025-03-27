@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo commands:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-fuchsia-cat.sh
-        container: qc.uni_greasy-flax-whippet
+        - /usr/bin/env sh .sqa/script.scanty-malachite-wrasse.sh
+        container: qc.uni_gloppy-apricot-kakapo
 timeout: 5400
