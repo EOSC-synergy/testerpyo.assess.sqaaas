@@ -1,5 +1,5 @@
 services:
-  qc.sty_gloppy-harlequin-angelfish:
+  qc.sty_pretty-firebrick-cattle:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
