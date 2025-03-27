@@ -1,5 +1,5 @@
 services:
-  qc.sty_wiggy-gamboge-toad:
+  qc.sty_nerdy-green-birman:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
