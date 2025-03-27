@@ -11,58 +11,10 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
-  QC.Acc:
-    repos:
-      github.com/PalomoIFCA/testerpyo git:
-        commands:
-        - /usr/bin/env sh .sqa/script.woolly-apricot-turkey.sh
-        container: qc.acc_sleepy-seashell-rhinoceros
-  QC.Doc:
-    repos:
-      github.com/PalomoIFCA/testerpyo find_doc_files.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.smelly-smalt-butterfly.sh
-        container: qc.doc_baggy-magenta-swan
-      github.com/PalomoIFCA/testerpyo git:
-        commands:
-        - /usr/bin/env sh .sqa/script.ready-white-crocodile.sh
-        container: qc.doc_seedy-cerise-wolf
-      github.com/PalomoIFCA/testerpyo markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.lanky-pink-wrasse.sh
-        container: qc.doc_scummy-peach-swan
-  QC.Lic:
-    repos:
-      github.com/PalomoIFCA/testerpyo licensee:
-        commands:
-        - /usr/bin/env sh .sqa/script.flimsy-red-peccary.sh
-        container: qc.lic_cloudy-cyan-indri
-  QC.Sec:
-    repos:
-      github.com/PalomoIFCA/testerpyo bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.baggy-ruby-dormouse.sh
-        container: qc.sec_crappy-linen-owl
-  QC.Sty:
-    repos:
-      github.com/PalomoIFCA/testerpyo flake8:
-        commands:
-        - /usr/bin/env sh .sqa/script.squirrely-zucchini-tuatara.sh
-        container: qc.sty_woozy-mustard-urchin
-      github.com/PalomoIFCA/testerpyo jsonlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.cozy-cinnamon-audemer.sh
-        container: qc.sty_frumpy-orchid-dunker
   QC.Uni:
     repos:
-      github.com/PalomoIFCA/testerpyo pytest:
+      github.com/PalomoIFCA/testerpyo commands:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-persimmon-olm.sh
-        container: qc.uni_cozy-pink-hedgehog
-  QC.Ver:
-    repos:
-      github.com/PalomoIFCA/testerpyo get_git_tags.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.chewy-lemon-rhinoceros.sh
-        container: qc.ver_snippy-asparagus-ray
+        - /usr/bin/env sh .sqa/script.fuzzy-brown-wildebeest.sh
+        container: qc.uni_messy-cobalt-gharial
 timeout: 5400
