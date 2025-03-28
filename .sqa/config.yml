@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-fuchsia-newt.sh
-        container: qc.sty_hilly-cobalt-jellyfish
+        - /usr/bin/env sh .sqa/script.wiggy-bronze-squirrel.sh
+        container: qc.sty_cheeky-ochre-mist
 timeout: 5400
