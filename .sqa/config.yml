@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-ochre-bloodhound.sh
-        container: qc.sty_hasty-buff-tapir
+        - /usr/bin/env sh .sqa/script.gloppy-tomato-eleuth.sh
+        container: qc.sty_grumpy-cornflower-ragdoll
 timeout: 5400

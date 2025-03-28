@@ -1,5 +1,5 @@
 services:
-  qc.sty_hasty-buff-tapir:
+  qc.sty_grumpy-cornflower-ragdoll:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
