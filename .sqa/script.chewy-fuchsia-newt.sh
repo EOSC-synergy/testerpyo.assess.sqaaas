@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerpyo &&
-    find_oph_workflows.py
+    flake8 . --exclude
 )
