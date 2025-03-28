@@ -1,5 +1,5 @@
 services:
-  qc.sty_skimpy-crimson-cattle:
+  qc.sty_hasty-buff-tapir:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:

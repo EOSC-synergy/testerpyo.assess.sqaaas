@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-white-tzu.sh
-        container: qc.sty_skimpy-crimson-cattle
+        - /usr/bin/env sh .sqa/script.grumpy-ochre-bloodhound.sh
+        container: qc.sty_hasty-buff-tapir
 timeout: 5400
