@@ -11,10 +11,10 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
-  QC.Uni:
+  QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo commands:
+      github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-olivine-greyhound.sh
-        container: qc.uni_smelly-lemon-insect
+        - /usr/bin/env sh .sqa/script.lumpy-white-tzu.sh
+        container: qc.sty_skimpy-crimson-cattle
 timeout: 5400

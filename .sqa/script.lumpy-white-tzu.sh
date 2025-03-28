@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerpyo &&
-    python3 -m pytest -v
+    flake8 . --exclude arguments.json
 )
