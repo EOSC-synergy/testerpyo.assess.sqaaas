@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-lemon-coati.sh
-        container: qc.sty_bumpy-aquamarine-bat
+        - /usr/bin/env sh .sqa/script.surly-asparagus-wallaby.sh
+        container: qc.sty_nerdy-puce-oyster
 timeout: 5400
