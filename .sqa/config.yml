@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-tomato-eleuth.sh
-        container: qc.sty_grumpy-cornflower-ragdoll
+        - /usr/bin/env sh .sqa/script.smelly-ecru-chinook.sh
+        container: qc.sty_baggy-coral-monster
 timeout: 5400
