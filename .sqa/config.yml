@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-cornflower-lobster.sh
-        container: qc.sty_shaggy-azure-ray
+        - /usr/bin/env sh .sqa/script.leaky-orchid-argentino.sh
+        container: qc.sty_stealthy-aqua-heron
 timeout: 5400
