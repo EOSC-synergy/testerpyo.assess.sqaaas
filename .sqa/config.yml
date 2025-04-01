@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-taupe-tamarin.sh
-        container: qc.sty_greasy-aqua-bat
+        - /usr/bin/env sh .sqa/script.snazzy-tomato-penguin.sh
+        container: qc.sty_dorky-burgundy-spitz
 timeout: 5400
