@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-crimson-chameleon.sh
-        container: qc.sty_pokey-ivory-zebra
+        - /usr/bin/env sh .sqa/script.foggy-purple-seal.sh
+        container: qc.sty_snippy-wisteria-kudu
 timeout: 5400
