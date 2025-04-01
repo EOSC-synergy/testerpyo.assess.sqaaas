@@ -11,10 +11,58 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.craggy-persimmon-birman.sh
+        container: qc.acc_sunny-ruby-worm
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/testerpyo find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.pokey-brass-caracal.sh
+        container: qc.doc_flaky-azure-dodo
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.goopy-harlequin-toad.sh
+        container: qc.doc_muggy-gold-barracuda
+      github.com/PalomoIFCA/testerpyo markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.snappy-pumpkin-dachsbracke.sh
+        container: qc.doc_thirsty-brass-foxhound
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/testerpyo licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.paltry-plum-dog.sh
+        container: qc.lic_woolly-ochre-dingo
+  QC.Sec:
+    repos:
+      github.com/PalomoIFCA/testerpyo bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.nippy-razzmatazz-squirrel.sh
+        container: qc.sec_snippy-silver-schnauzer
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-platinum-whale.sh
-        container: qc.sty_randy-grey-chamois
+        - /usr/bin/env sh .sqa/script.bumpy-salmon-raccoon.sh
+        container: qc.sty_slaphappy-seashell-bear
+      github.com/PalomoIFCA/testerpyo jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.shaky-harlequin-cassowary.sh
+        container: qc.sty_slimy-emerald-catfish
+  QC.Uni:
+    repos:
+      github.com/PalomoIFCA/testerpyo pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.seedy-thistle-molly.sh
+        container: qc.uni_chewy-sangria-discus
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/testerpyo get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleepy-copper-discus.sh
+        container: qc.ver_leaky-ivory-gar
 timeout: 5400

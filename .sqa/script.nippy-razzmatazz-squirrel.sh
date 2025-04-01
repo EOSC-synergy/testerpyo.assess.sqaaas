@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerpyo &&
-    flake8 . --exclude arguments.json
+    bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
 )
