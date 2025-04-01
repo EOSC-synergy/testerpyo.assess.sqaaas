@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-orchid-argentino.sh
-        container: qc.sty_stealthy-aqua-heron
+        - /usr/bin/env sh .sqa/script.snippy-taupe-tamarin.sh
+        container: qc.sty_greasy-aqua-bat
 timeout: 5400
