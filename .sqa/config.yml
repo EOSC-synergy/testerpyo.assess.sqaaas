@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-vermilion-earwig.sh
-        container: qc.sty_wimpy-olive-octopus
+        - /usr/bin/env sh .sqa/script.whiny-ecru-panda.sh
+        container: qc.sty_wimpy-asparagus-devil
 timeout: 5400
