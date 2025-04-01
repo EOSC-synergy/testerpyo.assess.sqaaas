@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-purple-seal.sh
-        container: qc.sty_snippy-wisteria-kudu
+        - /usr/bin/env sh .sqa/script.boozy-cornflower-lobster.sh
+        container: qc.sty_shaggy-azure-ray
 timeout: 5400
