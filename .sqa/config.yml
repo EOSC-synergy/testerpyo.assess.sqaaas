@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-tomato-penguin.sh
-        container: qc.sty_dorky-burgundy-spitz
+        - /usr/bin/env sh .sqa/script.hazy-mustard-alligator.sh
+        container: qc.sty_scaly-pink-fowl
 timeout: 5400
