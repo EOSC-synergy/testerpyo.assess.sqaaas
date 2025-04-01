@@ -1,5 +1,5 @@
 services:
-  qc.sty_wimpy-asparagus-devil:
+  qc.sty_randy-grey-chamois:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:

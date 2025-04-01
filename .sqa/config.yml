@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-ecru-panda.sh
-        container: qc.sty_wimpy-asparagus-devil
+        - /usr/bin/env sh .sqa/script.gamy-platinum-whale.sh
+        container: qc.sty_randy-grey-chamois
 timeout: 5400
