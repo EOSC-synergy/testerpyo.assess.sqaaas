@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-dandelion-wallaby.sh
-        container: qc.sty_leaky-alizarin-chin
+        - /usr/bin/env sh .sqa/script.messy-burgundy-akbash.sh
+        container: qc.sty_muggy-rose-goat
 timeout: 5400
