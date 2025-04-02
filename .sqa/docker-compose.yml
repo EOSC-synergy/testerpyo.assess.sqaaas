@@ -1,5 +1,5 @@
 services:
-  qc.sty_bluesy-persimmon-russel:
+  qc.sty_shaggy-taupe-giraffe:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:

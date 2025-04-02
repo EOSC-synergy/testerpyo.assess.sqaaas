@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-maroon-coati.sh
-        container: qc.sty_bluesy-persimmon-russel
+        - /usr/bin/env sh .sqa/script.grumpy-violet-sparrow.sh
+        container: qc.sty_shaggy-taupe-giraffe
 timeout: 5400
