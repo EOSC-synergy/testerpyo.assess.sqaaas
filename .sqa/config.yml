@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-tangerine-yak.sh
-        container: qc.sty_hazy-wisteria-chinook
+        - /usr/bin/env sh .sqa/script.goopy-dandelion-wallaby.sh
+        container: qc.sty_leaky-alizarin-chin
 timeout: 5400
