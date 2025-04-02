@@ -1,5 +1,5 @@
 services:
-  qc.sty_queasy-mustard-chow:
+  qc.sty_bluesy-persimmon-russel:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
