@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-puce-bee.sh
-        container: qc.sty_craggy-pear-buffalo
+        - /usr/bin/env sh .sqa/script.wheezy-wheat-robin.sh
+        container: qc.sty_snappy-aqua-hummingbird
 timeout: 5400
