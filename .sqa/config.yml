@@ -5,7 +5,7 @@ config:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
-      branch: main
+      branch: back_toHEAD_8_2_test
       repo: https://github.com/PalomoIFCA/testerpyo
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-asparagus-wallaby.sh
-        container: qc.sty_nerdy-puce-oyster
+        - /usr/bin/env sh .sqa/script.tasty-blue-schnauzer.sh
+        container: qc.sty_cheeky-chartreuse-chinchilla
 timeout: 5400
