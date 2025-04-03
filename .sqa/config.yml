@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-maroon-tarsier.sh
-        container: qc.sty_gamy-harlequin-cat
+        - /usr/bin/env sh .sqa/script.flimsy-apricot-llama.sh
+        container: qc.sty_cloudy-buff-squid
 timeout: 5400

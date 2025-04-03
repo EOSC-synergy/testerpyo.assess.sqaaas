@@ -1,5 +1,5 @@
 services:
-  qc.sty_gamy-harlequin-cat:
+  qc.sty_cloudy-buff-squid:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
