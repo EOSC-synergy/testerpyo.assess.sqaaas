@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-plum-guppy.sh
-        container: qc.sty_scaly-apricot-hippopotamus
+        - /usr/bin/env sh .sqa/script.smelly-linen-hedgehog.sh
+        container: qc.sty_cloudy-plum-peccary
 timeout: 5400
