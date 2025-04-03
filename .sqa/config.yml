@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-wheat-robin.sh
-        container: qc.sty_snappy-aqua-hummingbird
+        - /usr/bin/env sh .sqa/script.homey-maroon-tarsier.sh
+        container: qc.sty_gamy-harlequin-cat
 timeout: 5400
