@@ -1,5 +1,5 @@
 services:
-  qc.sty_scaly-ivory-moth:
+  qc.sty_flabby-harlequin-ibis:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
