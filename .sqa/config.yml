@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-myrtle-grasshopper.sh
-        container: qc.sty_flabby-harlequin-ibis
+        - /usr/bin/env sh .sqa/script.gimpy-green-robin.sh
+        container: qc.sty_shabby-cinnamon-alligator
 timeout: 5400
