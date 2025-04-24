@@ -1,5 +1,5 @@
 services:
-  qc.sty_clammy-amethyst-hippopotamus:
+  qc.sty_muzzy-blue-cuttlefish:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
