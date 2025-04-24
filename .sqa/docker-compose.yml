@@ -1,5 +1,5 @@
 services:
-  qc.sty_stuffy-aquamarine-rabbit:
+  qc.sty_thirsty-turquoise-macaque:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
