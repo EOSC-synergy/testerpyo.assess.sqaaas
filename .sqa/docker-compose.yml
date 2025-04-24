@@ -1,5 +1,5 @@
 services:
-  qc.sty_thirsty-turquoise-macaque:
+  qc.sty_squeaky-viridian-bloodhound:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
