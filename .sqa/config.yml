@@ -11,10 +11,58 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.cranky-buff-rabbit.sh
+        container: qc.acc_shaggy-viridian-birman
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/testerpyo find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.sunny-cardinal-deer.sh
+        container: qc.doc_sleazy-maroon-argentino
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.greasy-silver-cuttlefish.sh
+        container: qc.doc_squirrely-olivine-chimpanzee
+      github.com/PalomoIFCA/testerpyo markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.foggy-orange-spaniel.sh
+        container: qc.doc_stinky-olivine-dalmatian
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/testerpyo licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.wheezy-cinnabar-emu.sh
+        container: qc.lic_stinky-magnolia-fly
+  QC.Sec:
+    repos:
+      github.com/PalomoIFCA/testerpyo bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.dorky-amber-insect.sh
+        container: qc.sec_seedy-purple-forest
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
+      github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-plum-raccoon.sh
-        container: qc.sty_squeaky-viridian-bloodhound
+        - /usr/bin/env sh .sqa/script.greasy-cinnabar-terrier.sh
+        container: qc.sty_shabby-smalt-markhor
+      github.com/PalomoIFCA/testerpyo jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.pretty-black-armadillo.sh
+        container: qc.sty_stuffy-firebrick-hornet
+  QC.Uni:
+    repos:
+      github.com/PalomoIFCA/testerpyo pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.messy-ochre-stoat.sh
+        container: qc.uni_crabby-olivine-stingray
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/testerpyo get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.sunny-olivine-caiman.sh
+        container: qc.ver_squirrely-coral-sheepdog
 timeout: 5400
