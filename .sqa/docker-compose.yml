@@ -1,5 +1,5 @@
 services:
-  qc.sty_homey-seashell-bat:
+  qc.sty_bluesy-silver-bordeaux:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile

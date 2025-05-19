@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-fuchsia-eel.sh
-        container: qc.sty_homey-seashell-bat
+        - /usr/bin/env sh .sqa/script.greasy-cream-liger.sh
+        container: qc.sty_bluesy-silver-bordeaux
 timeout: 5400
