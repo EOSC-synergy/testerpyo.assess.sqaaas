@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerpyo &&
-    find_oph_workflows.py
+    bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
 )

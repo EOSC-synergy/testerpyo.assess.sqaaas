@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/Ophidia
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
       branch: main
@@ -11,10 +11,58 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.snappy-orchid-barnacle.sh
+        container: qc.acc_chewy-pink-vole
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/testerpyo find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.ready-cream-mongrel.sh
+        container: qc.doc_clammy-mustard-corgi
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.queasy-black-civet.sh
+        container: qc.doc_skinny-rust-vole
+      github.com/PalomoIFCA/testerpyo markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-rust-dragon.sh
+        container: qc.doc_foggy-ivory-chameleon
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/testerpyo licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.shabby-harlequin-kingfisher.sh
+        container: qc.lic_sleepy-sangria-whippet
+  QC.Sec:
+    repos:
+      github.com/PalomoIFCA/testerpyo bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.pokey-orange-wrasse.sh
+        container: qc.sec_bumpy-goldenrod-gorilla
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
+      github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-cream-liger.sh
-        container: qc.sty_bluesy-silver-bordeaux
+        - /usr/bin/env sh .sqa/script.beady-cinnabar-akbash.sh
+        container: qc.sty_hazy-ultramarine-abyssinian
+      github.com/PalomoIFCA/testerpyo jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.slaphappy-chocolate-clam.sh
+        container: qc.sty_leaky-pear-cougar
+  QC.Uni:
+    repos:
+      github.com/PalomoIFCA/testerpyo pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.squeaky-crimson-ferret.sh
+        container: qc.uni_cheeky-copper-monster
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/testerpyo get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.geeky-ruby-emu.sh
+        container: qc.ver_wiggy-lilac-seal
 timeout: 5400
