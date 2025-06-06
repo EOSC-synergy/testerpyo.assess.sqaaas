@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-linen-numbat.sh
-        container: qc.sty_paltry-emerald-bonobo
+        - /usr/bin/env sh .sqa/script.bumpy-burgundy-crane.sh
+        container: qc.sty_silly-taupe-panda
 timeout: 5400
