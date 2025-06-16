@@ -1,5 +1,5 @@
 services:
-  qc.sty_silly-taupe-panda:
+  qc.sty_silly-harlequin-seahorse:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
