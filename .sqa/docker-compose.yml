@@ -1,5 +1,5 @@
 services:
-  qc.sty_nerdy-firebrick-neanderthal:
+  qc.sty_muzzy-burgundy-earwig:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
