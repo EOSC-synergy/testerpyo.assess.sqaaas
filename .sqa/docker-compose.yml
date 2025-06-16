@@ -1,5 +1,5 @@
 services:
-  qc.sty_muzzy-burgundy-earwig:
+  qc.sty_sunny-wisteria-corgi:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile

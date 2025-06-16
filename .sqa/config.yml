@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
       branch: test_ophidia
@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-azure-dolphin.sh
-        container: qc.sty_muzzy-burgundy-earwig
+        - /usr/bin/env sh .sqa/script.droopy-smalt-badger.sh
+        container: qc.sty_sunny-wisteria-corgi
 timeout: 5400
