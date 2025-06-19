@@ -2,67 +2,19 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
-      branch: main
+      branch: sanity_check
       repo: https://github.com/PalomoIFCA/testerpyo
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
-  QC.Acc:
-    repos:
-      github.com/PalomoIFCA/testerpyo git:
-        commands:
-        - /usr/bin/env sh .sqa/script.stealthy-brown-angora.sh
-        container: qc.acc_snippy-lime-slug
-  QC.Doc:
-    repos:
-      github.com/PalomoIFCA/testerpyo find_doc_files.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.woozy-cardinal-termite.sh
-        container: qc.doc_gloppy-denim-goose
-      github.com/PalomoIFCA/testerpyo git:
-        commands:
-        - /usr/bin/env sh .sqa/script.jumpy-coral-ant.sh
-        container: qc.doc_sleazy-saffron-nightingale
-      github.com/PalomoIFCA/testerpyo markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.muzzy-firebrick-seahorse.sh
-        container: qc.doc_silly-celadon-dugong
-  QC.Lic:
-    repos:
-      github.com/PalomoIFCA/testerpyo licensee:
-        commands:
-        - /usr/bin/env sh .sqa/script.lovely-chestnut-falcon.sh
-        container: qc.lic_smelly-sepia-eagle
-  QC.Sec:
-    repos:
-      github.com/PalomoIFCA/testerpyo bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.cozy-apricot-cougar.sh
-        container: qc.sec_randy-white-numbat
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-vermilion-jaguar.sh
-        container: qc.sty_lousy-crimson-gar
-      github.com/PalomoIFCA/testerpyo jsonlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.sunny-celadon-stoat.sh
-        container: qc.sty_crappy-flax-swan
-  QC.Uni:
-    repos:
-      github.com/PalomoIFCA/testerpyo pytest:
-        commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-rose-frise.sh
-        container: qc.uni_sleazy-flax-toucan
-  QC.Ver:
-    repos:
-      github.com/PalomoIFCA/testerpyo get_git_tags.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.hasty-tan-lemming.sh
-        container: qc.ver_tacky-chartreuse-grasshopper
+        - /usr/bin/env sh .sqa/script.fuzzy-taupe-angora.sh
+        container: qc.sty_clammy-ultramarine-warthog
 timeout: 5400
