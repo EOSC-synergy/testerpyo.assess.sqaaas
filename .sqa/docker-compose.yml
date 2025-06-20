@@ -1,5 +1,5 @@
 services:
-  qc.sty_geeky-eggplant-warthog:
+  qc.sty_silly-mustard-moose:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
