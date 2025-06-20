@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-khaki-urchin.sh
-        container: qc.sty_lanky-charcoal-indri
+        - /usr/bin/env sh .sqa/script.greasy-chestnut-bracke.sh
+        container: qc.sty_lanky-magenta-greyhound
 timeout: 5400

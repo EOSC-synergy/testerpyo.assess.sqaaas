@@ -1,5 +1,5 @@
 services:
-  qc.sty_lanky-charcoal-indri:
+  qc.sty_lanky-magenta-greyhound:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
