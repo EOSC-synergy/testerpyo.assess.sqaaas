@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-crimson-insect.sh
-        container: qc.sty_silly-mustard-moose
+        - /usr/bin/env sh .sqa/script.cranky-zucchini-alligator.sh
+        container: qc.sty_lovely-ochre-manatee
 timeout: 5400
