@@ -1,5 +1,5 @@
 services:
-  qc.sty_squirrely-heliotrope-ocelot:
+  qc.sty_sleazy-apricot-collie:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
