@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-cobalt-manatee.sh
-        container: qc.sty_ready-aquamarine-hamster
+        - /usr/bin/env sh .sqa/script.slaphappy-orange-urchin.sh
+        container: qc.sty_surly-dandelion-lobster
 timeout: 5400
