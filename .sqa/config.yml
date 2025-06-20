@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-taupe-angora.sh
-        container: qc.sty_clammy-ultramarine-warthog
+        - /usr/bin/env sh .sqa/script.zippy-cinnabar-binturong.sh
+        container: qc.sty_lumpy-red-saola
 timeout: 5400

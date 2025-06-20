@@ -1,5 +1,5 @@
 services:
-  qc.sty_clammy-ultramarine-warthog:
+  qc.sty_lumpy-red-saola:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
