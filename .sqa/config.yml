@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-coral-rattlesnake.sh
-        container: qc.sty_crappy-vermilion-civet
+        - /usr/bin/env sh .sqa/script.snippy-razzmatazz-setter.sh
+        container: qc.sty_tasty-gamboge-bonobo
 timeout: 5400
