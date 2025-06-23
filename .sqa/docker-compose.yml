@@ -1,5 +1,5 @@
 services:
-  qc.sty_cranky-cobalt-chipmunk:
+  qc.sty_messy-yellow-centipede:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
