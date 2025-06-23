@@ -1,5 +1,5 @@
 services:
-  qc.sty_lanky-ruby-dane:
+  qc.sty_queasy-magnolia-crab:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile

@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-silver-paradise.sh
-        container: qc.sty_lanky-ruby-dane
+        - /usr/bin/env sh .sqa/script.shaky-persimmon-tetra.sh
+        container: qc.sty_queasy-magnolia-crab
 timeout: 5400
