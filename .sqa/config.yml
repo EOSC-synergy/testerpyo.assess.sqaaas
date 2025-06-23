@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-jade-gopher.sh
-        container: qc.sty_tasty-puce-sheep
+        - /usr/bin/env sh .sqa/script.geeky-chestnut-nightingale.sh
+        container: qc.sty_lumpy-wheat-wildebeest
 timeout: 5400
