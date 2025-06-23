@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-cornflower-malamute.sh
-        container: qc.sty_stuffy-taupe-coati
+        - /usr/bin/env sh .sqa/script.nerdy-cerulean-mole.sh
+        container: qc.sty_homely-viridian-havanese
 timeout: 5400
