@@ -1,5 +1,5 @@
 services:
-  qc.sty_cloudy-rose-zebu:
+  qc.sty_lanky-ruby-dane:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile

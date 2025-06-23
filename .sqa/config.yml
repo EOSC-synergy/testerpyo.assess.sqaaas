@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-saffron-barb.sh
-        container: qc.sty_cloudy-rose-zebu
+        - /usr/bin/env sh .sqa/script.pokey-silver-paradise.sh
+        container: qc.sty_lanky-ruby-dane
 timeout: 5400
