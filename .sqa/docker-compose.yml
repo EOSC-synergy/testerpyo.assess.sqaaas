@@ -1,5 +1,5 @@
 services:
-  qc.sty_homey-gamboge-llama:
+  qc.sty_crappy-vermilion-civet:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:

@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-gamboge-bulldog.sh
-        container: qc.sty_homey-gamboge-llama
+        - /usr/bin/env sh .sqa/script.zippy-coral-rattlesnake.sh
+        container: qc.sty_crappy-vermilion-civet
 timeout: 5400
