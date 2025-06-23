@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-thistle-caiman.sh
-        container: qc.sty_woozy-myrtle-salamander
+        - /usr/bin/env sh .sqa/script.muggy-alizarin-chimpanzee.sh
+        container: qc.sty_lovely-indigo-pinscher
 timeout: 5400
