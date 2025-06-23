@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-cerulean-mole.sh
-        container: qc.sty_homely-viridian-havanese
+        - /usr/bin/env sh .sqa/script.snoopy-cerulean-fly.sh
+        container: qc.sty_chummy-ivory-gerbil
 timeout: 5400

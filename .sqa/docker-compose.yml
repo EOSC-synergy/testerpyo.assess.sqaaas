@@ -1,5 +1,5 @@
 services:
-  qc.sty_homely-viridian-havanese:
+  qc.sty_chummy-ivory-gerbil:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
