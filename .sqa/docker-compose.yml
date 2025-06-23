@@ -1,9 +1,7 @@
 services:
-  qc.sty_queasy-magnolia-crab:
-    build:
-      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
-      dockerfile: Dockerfile
+  qc.sty_snoopy-mustard-penguin:
     command: sleep 6000000
+    image: pipelinecomponents/flake8:0.9.0
     volumes:
     - source: ./
       target: /sqaaas-build

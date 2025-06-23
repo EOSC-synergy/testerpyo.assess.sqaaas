@@ -13,8 +13,8 @@ environment:
 sqa_criteria:
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
+      github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-persimmon-tetra.sh
-        container: qc.sty_queasy-magnolia-crab
+        - /usr/bin/env sh .sqa/script.beady-maroon-burmese.sh
+        container: qc.sty_snoopy-mustard-penguin
 timeout: 5400
