@@ -1,5 +1,5 @@
 services:
-  qc.sty_sleazy-zucchini-dog:
+  qc.sty_homey-gamboge-llama:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
