@@ -1,5 +1,5 @@
 services:
-  qc.sty_shaky-mustard-schnauzer:
+  qc.sty_pretty-taupe-toad:
     command: sleep 6000000
     volumes:
     - source: ./
