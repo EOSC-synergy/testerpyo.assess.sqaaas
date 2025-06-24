@@ -1,5 +1,8 @@
 services:
-  qc.sty_pretty-taupe-toad:
+  qc.sty_beady-vermilion-capuchin:
+    build:
+      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
+      dockerfile: Dockerfile
     command: sleep 6000000
     volumes:
     - source: ./

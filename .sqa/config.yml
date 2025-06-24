@@ -13,8 +13,8 @@ environment:
 sqa_criteria:
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo flake8:
+      github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-denim-cassowary.sh
-        container: qc.sty_pretty-taupe-toad
+        - /usr/bin/env sh .sqa/script.freaky-ruby-caterpillar.sh
+        container: qc.sty_beady-vermilion-capuchin
 timeout: 5400
