@@ -1,5 +1,5 @@
 services:
-  qc.sty_messy-yellow-centipede:
+  qc.sty_nerdy-tan-cattle:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
