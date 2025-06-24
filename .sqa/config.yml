@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-cornflower-ocelot.sh
-        container: qc.sty_whiny-chartreuse-ocelot
+        - /usr/bin/env sh .sqa/script.tasty-pumpkin-turkey.sh
+        container: qc.sty_chewy-brass-jackal
 timeout: 5400
