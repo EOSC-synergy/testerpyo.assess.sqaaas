@@ -1,5 +1,5 @@
 services:
-  qc.sty_hilly-plum-kiwi:
+  qc.sty_homely-aquamarine-molly:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
