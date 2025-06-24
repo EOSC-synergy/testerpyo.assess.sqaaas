@@ -1,5 +1,5 @@
 services:
-  qc.sty_clammy-black-donkey:
+  qc.sty_hasty-wisteria-bird:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
