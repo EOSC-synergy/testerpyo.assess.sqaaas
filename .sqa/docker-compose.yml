@@ -1,5 +1,5 @@
 services:
-  qc.sty_frumpy-cobalt-antelope:
+  qc.sty_shaky-mustard-schnauzer:
     command: sleep 6000000
     volumes:
     - source: ./
