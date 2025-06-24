@@ -1,7 +1,6 @@
 services:
-  qc.sty_homely-aquamarine-molly:
+  qc.sty_frumpy-cobalt-antelope:
     command: sleep 6000000
-    image: pipelinecomponents/flake8:0.9.0
     volumes:
     - source: ./
       target: /sqaaas-build
