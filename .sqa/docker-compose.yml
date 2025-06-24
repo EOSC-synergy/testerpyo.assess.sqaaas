@@ -1,7 +1,9 @@
 services:
-  qc.sty_snoopy-mustard-penguin:
+  qc.sty_clammy-black-donkey:
+    build:
+      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
+      dockerfile: Dockerfile
     command: sleep 6000000
-    image: pipelinecomponents/flake8:0.9.0
     volumes:
     - source: ./
       target: /sqaaas-build

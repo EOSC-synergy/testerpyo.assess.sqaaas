@@ -5,7 +5,7 @@ config:
       branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
-      branch: main
+      branch: fake_validator
       repo: https://github.com/PalomoIFCA/testerpyo
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -13,8 +13,8 @@ environment:
 sqa_criteria:
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo flake8:
+      github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-maroon-burmese.sh
-        container: qc.sty_snoopy-mustard-penguin
+        - /usr/bin/env sh .sqa/script.sloppy-turquoise-lizard.sh
+        container: qc.sty_clammy-black-donkey
 timeout: 5400
