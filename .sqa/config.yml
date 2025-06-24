@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-goldenrod-bat.sh
-        container: qc.sty_lousy-corn-lion
+        - /usr/bin/env sh .sqa/script.seedy-ruby-vole.sh
+        container: qc.sty_hilly-plum-kiwi
 timeout: 5400
