@@ -1,7 +1,6 @@
 services:
-  qc.sty_snoopy-mustard-penguin:
+  qc.sty_skimpy-flax-macaw:
     command: sleep 6000000
-    image: pipelinecomponents/flake8:0.9.0
     volumes:
     - source: ./
       target: /sqaaas-build
