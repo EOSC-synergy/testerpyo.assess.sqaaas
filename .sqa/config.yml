@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-maroon-gecko.sh
-        container: qc.sty_skimpy-flax-macaw
+        - /usr/bin/env sh .sqa/script.tacky-amber-toucan.sh
+        container: qc.sty_wheezy-sapphire-bongo
 timeout: 5400

@@ -1,6 +1,7 @@
 services:
-  qc.sty_skimpy-flax-macaw:
+  qc.sty_wheezy-sapphire-bongo:
     command: sleep 6000000
+    image: pipelinecomponents/fkake8:0.9.0
     volumes:
     - source: ./
       target: /sqaaas-build
