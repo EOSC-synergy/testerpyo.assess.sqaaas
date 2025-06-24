@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerpyo &&
-    flake8 .
+    flake8 . --exclude arguments.json
 )

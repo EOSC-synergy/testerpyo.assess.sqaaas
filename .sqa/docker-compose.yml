@@ -1,5 +1,5 @@
 services:
-  qc.sty_wheezy-sapphire-bongo:
+  qc.sty_lousy-corn-lion:
     command: sleep 6000000
     image: pipelinecomponents/fkake8:0.9.0
     volumes:
