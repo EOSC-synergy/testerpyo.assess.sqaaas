@@ -1,5 +1,5 @@
 services:
-  qc.sty_snappy-white-serval:
+  qc.sty_tacky-myrtle-snail:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
