@@ -13,8 +13,8 @@ environment:
 sqa_criteria:
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
+      github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-olivine-grasshopper.sh
-        container: qc.sty_tacky-myrtle-snail
+        - /usr/bin/env sh .sqa/script.scummy-maroon-liger.sh
+        container: qc.sty_pokey-aquamarine-centipede
 timeout: 5400
