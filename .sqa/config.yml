@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-sapphire-wrasse.sh
-        container: qc.sty_flabby-smalt-gharial
+        - /usr/bin/env sh .sqa/script.crappy-scarlet-buffalo.sh
+        container: qc.sty_sleepy-sepia-quoll
 timeout: 5400

@@ -1,5 +1,5 @@
 services:
-  qc.sty_flabby-smalt-gharial:
+  qc.sty_sleepy-sepia-quoll:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
