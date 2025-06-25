@@ -1,5 +1,5 @@
 services:
-  qc.sty_snappy-gamboge-abyssinian:
+  qc.sty_wimpy-cyan-corgi:
     command: sleep 6000000
     image: pipelinecomponents/flake8:0.9.0
     volumes:
