@@ -5,7 +5,7 @@ config:
       branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
-      branch: main
+      branch: change_to_pyophidia
       repo: https://github.com/PalomoIFCA/testerpyo
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-maroon-burmese.sh
-        container: qc.sty_snoopy-mustard-penguin
+        - /usr/bin/env sh .sqa/script.scummy-aqua-markhor.sh
+        container: qc.sty_sleepy-tomato-lemur
 timeout: 5400
