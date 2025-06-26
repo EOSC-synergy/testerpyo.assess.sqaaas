@@ -11,10 +11,54 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.flabby-olivine-spaniel.sh
+        container: qc.acc_wimpy-orchid-quoll
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/testerpyo find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.ready-saffron-hare.sh
+        container: qc.doc_goopy-olivine-chow
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.lumpy-turquoise-discus.sh
+        container: qc.doc_muzzy-wheat-terrier
+      github.com/PalomoIFCA/testerpyo markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.cheeky-celadon-liger.sh
+        container: qc.doc_randy-cerulean-squirt
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/testerpyo licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.flabby-beige-kingfisher.sh
+        container: qc.lic_craggy-cinnamon-squirt
+  QC.Sec:
+    repos:
+      github.com/PalomoIFCA/testerpyo bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.bumpy-champagne-caterpillar.sh
+        container: qc.sec_leaky-heliotrope-emu
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo flake8:
+      github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-maroon-burmese.sh
-        container: qc.sty_snoopy-mustard-penguin
+        - /usr/bin/env sh .sqa/script.snippy-cerise-kudu.sh
+        container: qc.sty_trippy-puce-terrier
+  QC.Uni:
+    repos:
+      github.com/PalomoIFCA/testerpyo pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.foggy-amethyst-magpie.sh
+        container: qc.uni_messy-cream-albatross
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/testerpyo get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.goopy-brass-bobcat.sh
+        container: qc.ver_muzzy-scarlet-frog
 timeout: 5400
