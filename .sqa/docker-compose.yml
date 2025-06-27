@@ -1,5 +1,5 @@
 services:
-  qc.sty_wheezy-olive-barracuda:
+  qc.sty_slaphappy-cream-russel:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
