@@ -11,54 +11,10 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
-  QC.Acc:
-    repos:
-      github.com/PalomoIFCA/testerpyo git:
-        commands:
-        - /usr/bin/env sh .sqa/script.dorky-brown-newt.sh
-        container: qc.acc_nerdy-wisteria-duck
-  QC.Doc:
-    repos:
-      github.com/PalomoIFCA/testerpyo find_doc_files.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.pretty-corn-crane.sh
-        container: qc.doc_crappy-persimmon-macaque
-      github.com/PalomoIFCA/testerpyo git:
-        commands:
-        - /usr/bin/env sh .sqa/script.wheezy-amaranth-budgerigar.sh
-        container: qc.doc_slimy-viridian-neanderthal
-      github.com/PalomoIFCA/testerpyo markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.scummy-seashell-kingfisher.sh
-        container: qc.doc_baggy-turquoise-donkey
-  QC.Lic:
-    repos:
-      github.com/PalomoIFCA/testerpyo licensee:
-        commands:
-        - /usr/bin/env sh .sqa/script.chummy-amber-argentino.sh
-        container: qc.lic_stealthy-persimmon-greyhound
-  QC.Sec:
-    repos:
-      github.com/PalomoIFCA/testerpyo bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.pasty-sapphire-terrier.sh
-        container: qc.sec_stinky-auburn-spider
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-corn-rhinoceros.sh
-        container: qc.sty_silly-silver-tortoise
-  QC.Uni:
-    repos:
-      github.com/PalomoIFCA/testerpyo pytest:
-        commands:
-        - /usr/bin/env sh .sqa/script.tacky-cardinal-octopus.sh
-        container: qc.uni_zippy-blue-antelope
-  QC.Ver:
-    repos:
-      github.com/PalomoIFCA/testerpyo get_git_tags.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.bumpy-eggplant-rottweiler.sh
-        container: qc.ver_tacky-flax-cat
+        - /usr/bin/env sh .sqa/script.tasty-russet-setter.sh
+        container: qc.sty_nippy-mustard-sheepdog
 timeout: 5400
