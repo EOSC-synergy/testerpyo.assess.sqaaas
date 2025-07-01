@@ -1,5 +1,5 @@
 services:
-  qc.sty_greasy-pumpkin-hound:
+  qc.sty_randy-lime-mole:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
