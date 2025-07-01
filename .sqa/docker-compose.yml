@@ -1,5 +1,5 @@
 services:
-  qc.sty_crabby-lemon-angelfish:
+  qc.sty_sleepy-burgundy-duck:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
