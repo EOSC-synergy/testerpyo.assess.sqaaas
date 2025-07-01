@@ -13,8 +13,8 @@ environment:
 sqa_criteria:
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
+      github.com/PalomoIFCA/testerpyo flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-peach-mau.sh
-        container: qc.sty_shabby-cyan-fowl
+        - /usr/bin/env sh .sqa/script.flimsy-pink-ostrich.sh
+        container: qc.sty_lumpy-rose-rhinoceros
 timeout: 5400

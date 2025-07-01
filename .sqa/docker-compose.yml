@@ -1,5 +1,5 @@
 services:
-  qc.sty_shabby-cyan-fowl:
+  qc.sty_lumpy-rose-rhinoceros:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
