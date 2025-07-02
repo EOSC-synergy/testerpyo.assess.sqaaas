@@ -1,5 +1,5 @@
 services:
-  qc.sty_crabby-lavender-oriole:
+  qc.sty_jumpy-champagne-sheep:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
