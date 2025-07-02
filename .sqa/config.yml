@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo PyOphidia:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-lime-argentino.sh
-        container: qc.sty_tacky-emerald-baboon
+        - /usr/bin/env sh .sqa/script.sleepy-pear-civet.sh
+        container: qc.sty_messy-chestnut-indri
 timeout: 5400
