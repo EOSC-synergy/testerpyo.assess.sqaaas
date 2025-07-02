@@ -1,5 +1,5 @@
 services:
-  qc.sty_cozy-maroon-slug:
+  qc.sty_gummy-cobalt-dragon:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile

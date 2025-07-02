@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-cyan-rabbit.sh
-        container: qc.sty_cozy-maroon-slug
+        - /usr/bin/env sh .sqa/script.geeky-lavender-manatee.sh
+        container: qc.sty_gummy-cobalt-dragon
 timeout: 5400
