@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-russet-setter.sh
-        container: qc.sty_nippy-mustard-sheepdog
+        - /usr/bin/env sh .sqa/script.flaky-auburn-blue.sh
+        container: qc.sty_pokey-firebrick-capybara
 timeout: 5400

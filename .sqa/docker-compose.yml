@@ -1,5 +1,5 @@
 services:
-  qc.sty_nippy-mustard-sheepdog:
+  qc.sty_pokey-firebrick-capybara:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
