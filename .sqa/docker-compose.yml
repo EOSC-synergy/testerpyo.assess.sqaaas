@@ -1,5 +1,5 @@
 services:
-  qc.sty_beady-plum-saola:
+  qc.sty_tacky-emerald-baboon:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile

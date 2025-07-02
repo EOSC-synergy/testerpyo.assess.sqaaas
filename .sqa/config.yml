@@ -13,8 +13,8 @@ environment:
 sqa_criteria:
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
+      github.com/PalomoIFCA/testerpyo PyOphidia:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-tomato-whippet.sh
-        container: qc.sty_beady-plum-saola
+        - /usr/bin/env sh .sqa/script.stuffy-lime-argentino.sh
+        container: qc.sty_tacky-emerald-baboon
 timeout: 5400
