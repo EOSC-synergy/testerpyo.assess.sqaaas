@@ -1,5 +1,5 @@
 services:
-  qc.sty_nippy-cornflower-toucan:
+  qc.sty_cranky-pink-shrew:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
