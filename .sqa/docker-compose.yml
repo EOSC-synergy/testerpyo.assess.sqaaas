@@ -1,5 +1,5 @@
 services:
-  qc.sty_jumpy-champagne-sheep:
+  qc.sty_beady-plum-saola:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
