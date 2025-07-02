@@ -1,5 +1,5 @@
 services:
-  qc.sty_scanty-saffron-burmese:
+  qc.sty_skanky-aquamarine-oriole:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile
