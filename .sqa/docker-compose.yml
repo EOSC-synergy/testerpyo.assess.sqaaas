@@ -1,5 +1,5 @@
 services:
-  qc.sty_sleepy-burgundy-duck:
+  qc.sty_greasy-sapphire-setter:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/pyophidia
       dockerfile: Dockerfile

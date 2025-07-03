@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-sapphire-wallaby.sh
-        container: qc.sty_sleepy-burgundy-duck
+        - /usr/bin/env sh .sqa/script.sleepy-olive-urchin.sh
+        container: qc.sty_greasy-sapphire-setter
 timeout: 5400
