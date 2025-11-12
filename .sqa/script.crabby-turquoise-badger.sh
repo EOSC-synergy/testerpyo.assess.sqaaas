@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerpyo &&
-    bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
+    pynblint.py
 )

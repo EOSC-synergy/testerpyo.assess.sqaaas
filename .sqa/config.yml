@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/Ophidia
+      branch: feature/pynblint
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
       branch: main
@@ -11,58 +11,10 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
-  QC.Acc:
-    repos:
-      github.com/PalomoIFCA/testerpyo git:
-        commands:
-        - /usr/bin/env sh .sqa/script.randy-blue-moose.sh
-        container: qc.acc_homely-aquamarine-fish
-  QC.Doc:
-    repos:
-      github.com/PalomoIFCA/testerpyo find_doc_files.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.foggy-crimson-dane.sh
-        container: qc.doc_droopy-olivine-wallaby
-      github.com/PalomoIFCA/testerpyo git:
-        commands:
-        - /usr/bin/env sh .sqa/script.sleazy-sangria-mole.sh
-        container: qc.doc_bluesy-ultramarine-gecko
-      github.com/PalomoIFCA/testerpyo markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.seedy-aquamarine-fox.sh
-        container: qc.doc_lousy-ruby-toucan
-  QC.Lic:
-    repos:
-      github.com/PalomoIFCA/testerpyo licensee:
-        commands:
-        - /usr/bin/env sh .sqa/script.chummy-denim-binturong.sh
-        container: qc.lic_silly-ivory-tetra
-  QC.Sec:
-    repos:
-      github.com/PalomoIFCA/testerpyo bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.hazy-olivine-barracuda.sh
-        container: qc.sec_homely-indigo-monkey
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo flake8:
+      github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-copper-woodpecker.sh
-        container: qc.sty_nippy-orchid-seal
-      github.com/PalomoIFCA/testerpyo jsonlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.muzzy-tomato-sparrow.sh
-        container: qc.sty_freaky-smalt-civet
-  QC.Uni:
-    repos:
-      github.com/PalomoIFCA/testerpyo pytest:
-        commands:
-        - /usr/bin/env sh .sqa/script.homey-chartreuse-spaniel.sh
-        container: qc.uni_frumpy-grey-drever
-  QC.Ver:
-    repos:
-      github.com/PalomoIFCA/testerpyo get_git_tags.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.sickly-bronze-cheetah.sh
-        container: qc.ver_grumpy-razzmatazz-gecko
+        - /usr/bin/env sh .sqa/script.crabby-turquoise-badger.sh
+        container: qc.sty_smelly-harlequin-maltese
 timeout: 5400
