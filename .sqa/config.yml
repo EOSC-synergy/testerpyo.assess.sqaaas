@@ -11,10 +11,54 @@ environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.ready-harlequin-monster.sh
+        container: qc.acc_homely-cinnabar-gharial
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/testerpyo find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.muzzy-grey-markhor.sh
+        container: qc.doc_lumpy-chestnut-capybara
+      github.com/PalomoIFCA/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.pokey-flax-opossum.sh
+        container: qc.doc_lovely-champagne-chinchilla
+      github.com/PalomoIFCA/testerpyo markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.queasy-persimmon-zebra.sh
+        container: qc.doc_tacky-goldenrod-skunk
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/testerpyo licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.baggy-harlequin-mayfly.sh
+        container: qc.lic_boozy-tan-falcon
+  QC.Sec:
+    repos:
+      github.com/PalomoIFCA/testerpyo bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.squirrely-turquoise-otter.sh
+        container: qc.sec_silly-peach-woodpecker
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-turquoise-badger.sh
-        container: qc.sty_smelly-harlequin-maltese
+        - /usr/bin/env sh .sqa/script.boozy-grey-fowl.sh
+        container: qc.sty_scanty-flax-drever
+  QC.Uni:
+    repos:
+      github.com/PalomoIFCA/testerpyo pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleepy-goldenrod-bear.sh
+        container: qc.uni_homey-amaranth-mole
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/testerpyo get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleazy-vermilion-orangutan.sh
+        container: qc.ver_snappy-pumpkin-stoat
 timeout: 5400
