@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-emerald-frigatebird.sh
-        container: qc.acc_crappy-black-gibbon
+        - /usr/bin/env sh .sqa/script.seedy-auburn-tarsier.sh
+        container: qc.acc_wheezy-aqua-whale
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-cornflower-bat.sh
-        container: qc.doc_fuzzy-ecru-boar
+        - /usr/bin/env sh .sqa/script.gamy-peach-schnauzer.sh
+        container: qc.doc_bluesy-green-catfish
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-malachite-bison.sh
-        container: qc.doc_gummy-tomato-wallaby
+        - /usr/bin/env sh .sqa/script.snazzy-ochre-rhinoceros.sh
+        container: qc.doc_scanty-grey-bracke
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-white-markhor.sh
-        container: qc.doc_flabby-apricot-dodo
+        - /usr/bin/env sh .sqa/script.dorky-denim-moorhen.sh
+        container: qc.doc_slimy-blue-deer
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-taupe-falcon.sh
-        container: qc.lic_paltry-violet-tetra
+        - /usr/bin/env sh .sqa/script.crabby-brass-mammoth.sh
+        container: qc.lic_lousy-chestnut-foxhound
   QC.Sec:
     repos:
       github.com/PalomoIFCA/testerpyo bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-cinnabar-gibbon.sh
-        container: qc.sec_gummy-celadon-orangutan
+        - /usr/bin/env sh .sqa/script.wimpy-khaki-nightingale.sh
+        container: qc.sec_grumpy-silver-axolotl
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-teal-ladybird.sh
-        container: qc.sty_slaphappy-heliotrope-malamute
+        - /usr/bin/env sh .sqa/script.snazzy-brass-deer.sh
+        container: qc.sty_skimpy-magenta-slug
   QC.Uni:
     repos:
       github.com/PalomoIFCA/testerpyo pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-brown-toad.sh
-        container: qc.uni_scanty-jade-gopher
+        - /usr/bin/env sh .sqa/script.tacky-burgundy-schnauzer.sh
+        container: qc.uni_sleazy-crimson-ragdoll
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-teal-opossum.sh
-        container: qc.ver_woolly-celadon-urchin
+        - /usr/bin/env sh .sqa/script.craggy-zucchini-bonobo.sh
+        container: qc.ver_lumpy-pink-beaver
 timeout: 5400
