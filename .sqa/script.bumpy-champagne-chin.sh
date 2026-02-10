@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerpyo &&
-    git rev-parse --is-inside-work-tree 
+    flake8 .
 )
