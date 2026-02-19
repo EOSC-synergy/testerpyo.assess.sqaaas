@@ -3,7 +3,7 @@
         "version": "3.5.0",
         "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/testerpyo.assess.sqaaas/main/.report/assessment_output.json",
         "report_permalink": "https://sqaaas.eosc-synergy.eu/full-assessment/report/https://raw.githubusercontent.com/eosc-synergy/testerpyo.assess.sqaaas/main/.report/assessment_output.json",
-        "timestamp": 1771489618.1284564
+        "timestamp": 1771489945.6670847
     },
     "repository": [
         {
@@ -1131,9 +1131,9 @@
                 "bronze": {
                     "to_fulfill": [
                         "QC.Lic",
-                        "QC.Doc",
                         "QC.Acc",
-                        "QC.Met"
+                        "QC.Met",
+                        "QC.Doc"
                     ],
                     "missing": [
                         "QC.Lic",
@@ -1146,54 +1146,54 @@
                 },
                 "silver": {
                     "to_fulfill": [
-                        "QC.Acc",
-                        "QC.Doc",
-                        "QC.Sty",
                         "QC.Lic",
+                        "QC.Acc",
                         "QC.Ver",
                         "QC.Sec",
-                        "QC.Met"
+                        "QC.Met",
+                        "QC.Sty",
+                        "QC.Doc"
                     ],
                     "missing": [
-                        "QC.Sec",
-                        "QC.Doc",
                         "QC.Lic",
+                        "QC.Sec",
+                        "QC.Met",
                         "QC.Ver",
-                        "QC.Met"
+                        "QC.Doc"
                     ],
                     "fulfilled": [
-                        "QC.Acc",
-                        "QC.Sty"
+                        "QC.Sty",
+                        "QC.Acc"
                     ]
                 },
                 "gold": {
                     "to_fulfill": [
-                        "QC.Acc",
-                        "QC.Man",
-                        "QC.Doc",
-                        "QC.Sty",
                         "QC.Lic",
-                        "QC.Ver",
-                        "QC.Del",
-                        "QC.Sec",
-                        "QC.Wor",
                         "QC.Uni",
-                        "QC.Met"
+                        "QC.Acc",
+                        "QC.Ver",
+                        "QC.Sec",
+                        "QC.Del",
+                        "QC.Wor",
+                        "QC.Met",
+                        "QC.Sty",
+                        "QC.Man",
+                        "QC.Doc"
                     ],
                     "missing": [
-                        "QC.Man",
-                        "QC.Doc",
                         "QC.Lic",
-                        "QC.Ver",
-                        "QC.Del",
-                        "QC.Sec",
-                        "QC.Wor",
                         "QC.Uni",
-                        "QC.Met"
+                        "QC.Ver",
+                        "QC.Sec",
+                        "QC.Del",
+                        "QC.Wor",
+                        "QC.Met",
+                        "QC.Man",
+                        "QC.Doc"
                     ],
                     "fulfilled": [
-                        "QC.Acc",
-                        "QC.Sty"
+                        "QC.Sty",
+                        "QC.Acc"
                     ]
                 }
             },
