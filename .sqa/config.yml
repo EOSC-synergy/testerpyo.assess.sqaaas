@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-zucchini-leopard.sh
-        container: qc.acc_frumpy-heliotrope-vulture
+        - /usr/bin/env sh .sqa/script.ugly-tangerine-gar.sh
+        container: qc.acc_clammy-black-pinscher
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-lavender-falcon.sh
-        container: qc.doc_thirsty-eggplant-cuscus
+        - /usr/bin/env sh .sqa/script.squirrely-chestnut-frise.sh
+        container: qc.doc_silly-pumpkin-crocodile
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-ecru-panda.sh
-        container: qc.doc_shabby-cerulean-wasp
+        - /usr/bin/env sh .sqa/script.beady-violet-eagle.sh
+        container: qc.doc_wimpy-corn-saola
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-olive-squid.sh
-        container: qc.doc_scanty-rose-chinook
+        - /usr/bin/env sh .sqa/script.freaky-magenta-mayfly.sh
+        container: qc.doc_fuzzy-scarlet-squirt
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-vermilion-robin.sh
-        container: qc.lic_scaly-harlequin-cichlid
+        - /usr/bin/env sh .sqa/script.skimpy-rose-angora.sh
+        container: qc.lic_slaphappy-tangerine-gerbil
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-sapphire-frigatebird.sh
-        container: qc.sty_snippy-tomato-olm
+        - /usr/bin/env sh .sqa/script.flaky-cardinal-spaniel.sh
+        container: qc.sty_lanky-ultramarine-javanese
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-lime-spaniel.sh
-        container: qc.ver_goopy-beige-eagle
+        - /usr/bin/env sh .sqa/script.crabby-brown-indri.sh
+        container: qc.ver_snoopy-dandelion-tarsier
 timeout: 5400
