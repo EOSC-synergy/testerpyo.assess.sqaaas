@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-aquamarine-weasel.sh
-        container: qc.acc_flabby-viridian-akita
+        - /usr/bin/env sh .sqa/script.lumpy-wisteria-moth.sh
+        container: qc.acc_flaky-brass-coral
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-myrtle-peccary.sh
-        container: qc.doc_foggy-auburn-cougar
+        - /usr/bin/env sh .sqa/script.randy-lavender-vole.sh
+        container: qc.doc_frumpy-aquamarine-albatross
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-harlequin-tarantula.sh
-        container: qc.doc_skinny-rose-bulldog
+        - /usr/bin/env sh .sqa/script.nippy-pink-birman.sh
+        container: qc.doc_snazzy-olivine-macaw
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-beige-manatee.sh
-        container: qc.doc_chummy-champagne-dunker
+        - /usr/bin/env sh .sqa/script.skinny-burgundy-quoll.sh
+        container: qc.doc_wheezy-champagne-leopard
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-rust-reindeer.sh
-        container: qc.lic_hilly-auburn-kudu
+        - /usr/bin/env sh .sqa/script.gamy-linen-havanese.sh
+        container: qc.lic_hasty-crimson-dog
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-dandelion-fowl.sh
-        container: qc.sty_sleepy-amber-owl
+        - /usr/bin/env sh .sqa/script.wimpy-seashell-meerkat.sh
+        container: qc.sty_flaky-tan-malamute
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-black-mule.sh
-        container: qc.ver_silly-ivory-okapi
+        - /usr/bin/env sh .sqa/script.stuffy-pink-centipede.sh
+        container: qc.ver_skanky-ruby-toad
 timeout: 5400
