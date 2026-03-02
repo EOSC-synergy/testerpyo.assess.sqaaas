@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-green-horse.sh
-        container: qc.acc_thirsty-cornflower-starfish
+        - /usr/bin/env sh .sqa/script.shabby-zucchini-leopard.sh
+        container: qc.acc_frumpy-heliotrope-vulture
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-sangria-setter.sh
-        container: qc.doc_jumpy-vermilion-russel
+        - /usr/bin/env sh .sqa/script.droopy-lavender-falcon.sh
+        container: qc.doc_thirsty-eggplant-cuscus
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-saffron-guppy.sh
-        container: qc.doc_sleepy-tangerine-duck
+        - /usr/bin/env sh .sqa/script.breezy-ecru-panda.sh
+        container: qc.doc_shabby-cerulean-wasp
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-razzmatazz-loon.sh
-        container: qc.doc_sickly-aquamarine-dodo
+        - /usr/bin/env sh .sqa/script.nerdy-olive-squid.sh
+        container: qc.doc_scanty-rose-chinook
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-mauve-bird.sh
-        container: qc.lic_chummy-apricot-havanese
+        - /usr/bin/env sh .sqa/script.stinky-vermilion-robin.sh
+        container: qc.lic_scaly-harlequin-cichlid
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-red-zonkey.sh
-        container: qc.sty_crabby-firebrick-termite
+        - /usr/bin/env sh .sqa/script.thirsty-sapphire-frigatebird.sh
+        container: qc.sty_snippy-tomato-olm
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-dandelion-dodo.sh
-        container: qc.ver_muzzy-cardinal-zonkey
+        - /usr/bin/env sh .sqa/script.smelly-lime-spaniel.sh
+        container: qc.ver_goopy-beige-eagle
 timeout: 5400
