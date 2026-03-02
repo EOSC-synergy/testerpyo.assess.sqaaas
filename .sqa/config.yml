@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-wisteria-moth.sh
-        container: qc.acc_flaky-brass-coral
+        - /usr/bin/env sh .sqa/script.randy-charcoal-llama.sh
+        container: qc.acc_breezy-eggplant-lemming
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-lavender-vole.sh
-        container: qc.doc_frumpy-aquamarine-albatross
+        - /usr/bin/env sh .sqa/script.snazzy-heliotrope-mist.sh
+        container: qc.doc_scanty-gamboge-gorilla
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-pink-birman.sh
-        container: qc.doc_snazzy-olivine-macaw
+        - /usr/bin/env sh .sqa/script.snazzy-viridian-bison.sh
+        container: qc.doc_jumpy-razzmatazz-quoll
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-burgundy-quoll.sh
-        container: qc.doc_wheezy-champagne-leopard
+        - /usr/bin/env sh .sqa/script.scummy-apricot-camel.sh
+        container: qc.doc_gummy-xanthic-havanese
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-linen-havanese.sh
-        container: qc.lic_hasty-crimson-dog
+        - /usr/bin/env sh .sqa/script.pasty-cerulean-mammoth.sh
+        container: qc.lic_shaggy-cerise-kudu
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-seashell-meerkat.sh
-        container: qc.sty_flaky-tan-malamute
+        - /usr/bin/env sh .sqa/script.wheezy-dandelion-zebra.sh
+        container: qc.sty_shaggy-sapphire-reindeer
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-pink-centipede.sh
-        container: qc.ver_skanky-ruby-toad
+        - /usr/bin/env sh .sqa/script.fuzzy-persimmon-coral.sh
+        container: qc.ver_stealthy-champagne-caiman
 timeout: 5400
