@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-grey-hippopotamus.sh
-        container: qc.acc_pokey-flax-civet
+        - /usr/bin/env sh .sqa/script.zippy-lime-tang.sh
+        container: qc.acc_scanty-cobalt-labradoodle
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-sepia-newt.sh
-        container: qc.doc_snoopy-lavender-crane
+        - /usr/bin/env sh .sqa/script.leaky-orange-whale.sh
+        container: qc.doc_snoopy-heliotrope-lion
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-indigo-forest.sh
-        container: qc.doc_sickly-puce-kudu
+        - /usr/bin/env sh .sqa/script.sloppy-tangerine-snake.sh
+        container: qc.doc_skanky-flax-seahorse
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-indigo-ibis.sh
-        container: qc.doc_breezy-cornflower-fox
+        - /usr/bin/env sh .sqa/script.woolly-purple-malamute.sh
+        container: qc.doc_seedy-indigo-kangaroo
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-magenta-gharial.sh
-        container: qc.lic_cheeky-magnolia-toad
+        - /usr/bin/env sh .sqa/script.lanky-tomato-earwig.sh
+        container: qc.lic_flimsy-denim-weasel
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-cerulean-skunk.sh
-        container: qc.sty_fuzzy-ivory-flounder
+        - /usr/bin/env sh .sqa/script.skanky-auburn-starfish.sh
+        container: qc.sty_squeaky-rust-kangaroo
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-bistre-fox.sh
-        container: qc.ver_scummy-ochre-jellyfish
+        - /usr/bin/env sh .sqa/script.flimsy-myrtle-quokka.sh
+        container: qc.ver_tacky-cardinal-pig
 timeout: 5400
