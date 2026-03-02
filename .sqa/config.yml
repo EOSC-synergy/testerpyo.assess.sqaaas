@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-tangerine-gar.sh
-        container: qc.acc_clammy-black-pinscher
+        - /usr/bin/env sh .sqa/script.snoopy-aquamarine-weasel.sh
+        container: qc.acc_flabby-viridian-akita
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-chestnut-frise.sh
-        container: qc.doc_silly-pumpkin-crocodile
+        - /usr/bin/env sh .sqa/script.snazzy-myrtle-peccary.sh
+        container: qc.doc_foggy-auburn-cougar
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-violet-eagle.sh
-        container: qc.doc_wimpy-corn-saola
+        - /usr/bin/env sh .sqa/script.foggy-harlequin-tarantula.sh
+        container: qc.doc_skinny-rose-bulldog
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-magenta-mayfly.sh
-        container: qc.doc_fuzzy-scarlet-squirt
+        - /usr/bin/env sh .sqa/script.jumpy-beige-manatee.sh
+        container: qc.doc_chummy-champagne-dunker
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-rose-angora.sh
-        container: qc.lic_slaphappy-tangerine-gerbil
+        - /usr/bin/env sh .sqa/script.snappy-rust-reindeer.sh
+        container: qc.lic_hilly-auburn-kudu
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-cardinal-spaniel.sh
-        container: qc.sty_lanky-ultramarine-javanese
+        - /usr/bin/env sh .sqa/script.dorky-dandelion-fowl.sh
+        container: qc.sty_sleepy-amber-owl
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-brown-indri.sh
-        container: qc.ver_snoopy-dandelion-tarsier
+        - /usr/bin/env sh .sqa/script.slaphappy-black-mule.sh
+        container: qc.ver_silly-ivory-okapi
 timeout: 5400
