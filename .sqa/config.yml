@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/pynblint
+      branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
       branch: main
@@ -15,42 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-amaranth-wolfhound.sh
-        container: qc.acc_pasty-vermilion-blue
+        - /usr/bin/env sh .sqa/script.sloppy-green-horse.sh
+        container: qc.acc_thirsty-cornflower-starfish
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-buff-fox.sh
-        container: qc.doc_pokey-cinnabar-orangutan
+        - /usr/bin/env sh .sqa/script.cloudy-sangria-setter.sh
+        container: qc.doc_jumpy-vermilion-russel
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-khaki-rottweiler.sh
-        container: qc.doc_lovely-lavender-audemer
+        - /usr/bin/env sh .sqa/script.slaphappy-saffron-guppy.sh
+        container: qc.doc_sleepy-tangerine-duck
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-indigo-dalmatian.sh
-        container: qc.doc_homey-orchid-lemur
+        - /usr/bin/env sh .sqa/script.snazzy-razzmatazz-loon.sh
+        container: qc.doc_sickly-aquamarine-dodo
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-emerald-hornet.sh
-        container: qc.lic_gloppy-yellow-scorpion
+        - /usr/bin/env sh .sqa/script.flaky-mauve-bird.sh
+        container: qc.lic_chummy-apricot-havanese
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-pumpkin-birman.sh
-        container: qc.sty_paltry-ultramarine-octopus
-      github.com/PalomoIFCA/testerpyo pynblint.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.hilly-eggplant-antelope.sh
-        container: qc.sty_shabby-tan-stoat
+        - /usr/bin/env sh .sqa/script.greasy-red-zonkey.sh
+        container: qc.sty_crabby-firebrick-termite
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-indigo-cougar.sh
-        container: qc.ver_seedy-wheat-hornet
+        - /usr/bin/env sh .sqa/script.stuffy-dandelion-dodo.sh
+        container: qc.ver_muzzy-cardinal-zonkey
 timeout: 5400
