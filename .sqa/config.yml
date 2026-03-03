@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-black-eagle.sh
-        container: qc.acc_droopy-cinnamon-cheetah
+        - /usr/bin/env sh .sqa/script.wiggy-chartreuse-spitz.sh
+        container: qc.acc_stuffy-peach-spitz
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-cinnamon-warthog.sh
-        container: qc.doc_flimsy-purple-tetra
+        - /usr/bin/env sh .sqa/script.gummy-khaki-warthog.sh
+        container: qc.doc_cranky-cinnamon-centipede
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-amethyst-donkey.sh
-        container: qc.doc_woolly-white-saola
+        - /usr/bin/env sh .sqa/script.surly-chocolate-fowl.sh
+        container: qc.doc_flimsy-crimson-hare
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-azure-gopher.sh
-        container: qc.doc_skimpy-tangerine-kakapo
+        - /usr/bin/env sh .sqa/script.hilly-taupe-harrier.sh
+        container: qc.doc_randy-asparagus-capybara
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-cerise-horse.sh
-        container: qc.lic_messy-jade-fowl
+        - /usr/bin/env sh .sqa/script.messy-cardinal-mau.sh
+        container: qc.lic_sickly-cornflower-baboon
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-harlequin-emu.sh
-        container: qc.sty_cloudy-coral-wolverine
+        - /usr/bin/env sh .sqa/script.whiny-dandelion-avocet.sh
+        container: qc.sty_lumpy-auburn-tamarin
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-mauve-retriever.sh
-        container: qc.ver_lousy-ecru-wildebeest
+        - /usr/bin/env sh .sqa/script.wiggy-xanthic-bloodhound.sh
+        container: qc.ver_droopy-salmon-dalmatian
 timeout: 5400
