@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/pynblint
+      branch: feature/Ophidia
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
       branch: main
@@ -15,42 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-indigo-russel.sh
-        container: qc.acc_muggy-vermilion-fish
+        - /usr/bin/env sh .sqa/script.grumpy-thistle-seal.sh
+        container: qc.acc_blurry-wheat-newfoundland
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-saffron-lemming.sh
-        container: qc.doc_slimy-amaranth-flounder
+        - /usr/bin/env sh .sqa/script.nippy-lavender-moose.sh
+        container: qc.doc_gloppy-carmine-rhinoceros
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-chartreuse-squid.sh
-        container: qc.doc_gimpy-amaranth-chameleon
+        - /usr/bin/env sh .sqa/script.lumpy-harlequin-sheepdog.sh
+        container: qc.doc_messy-zucchini-bat
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-thistle-falcon.sh
-        container: qc.doc_homely-celadon-ragdoll
+        - /usr/bin/env sh .sqa/script.tacky-emerald-mouse.sh
+        container: qc.doc_gloppy-tomato-cassowary
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-bistre-ocelot.sh
-        container: qc.lic_breezy-olivine-bandicoot
+        - /usr/bin/env sh .sqa/script.droopy-salmon-butterfly.sh
+        container: qc.lic_breezy-lemon-moorhen
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-thistle-blue.sh
-        container: qc.sty_shaky-chartreuse-uakari
-      github.com/PalomoIFCA/testerpyo pynblint.py:
-        commands:
-        - /usr/bin/env sh .sqa/script.clammy-goldenrod-liger.sh
-        container: qc.sty_jumpy-sepia-russel
+        - /usr/bin/env sh .sqa/script.slaphappy-yellow-dalmatian.sh
+        container: qc.sty_sunny-cerulean-peccary
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-salmon-tarantula.sh
-        container: qc.ver_zippy-buff-warthog
+        - /usr/bin/env sh .sqa/script.skanky-mauve-giraffe.sh
+        container: qc.ver_crabby-cerise-ibis
 timeout: 5400
