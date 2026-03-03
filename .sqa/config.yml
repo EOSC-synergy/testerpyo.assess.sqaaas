@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-russet-dormouse.sh
-        container: qc.acc_paltry-gold-moorhen
+        - /usr/bin/env sh .sqa/script.trippy-dandelion-cheetah.sh
+        container: qc.acc_snappy-bistre-turtle
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-teal-budgerigar.sh
-        container: qc.doc_hazy-crimson-ladybird
+        - /usr/bin/env sh .sqa/script.queasy-eggplant-woodlouse.sh
+        container: qc.doc_hasty-seashell-oyster
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-orchid-lion.sh
-        container: qc.doc_scanty-pink-kiwi
+        - /usr/bin/env sh .sqa/script.snoopy-rust-dhole.sh
+        container: qc.doc_gummy-emerald-chihuahua
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-coral-stingray.sh
-        container: qc.doc_seedy-green-flounder
+        - /usr/bin/env sh .sqa/script.leaky-pear-cow.sh
+        container: qc.doc_freaky-asparagus-snake
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-wisteria-toad.sh
-        container: qc.lic_nippy-beige-dogfish
+        - /usr/bin/env sh .sqa/script.chewy-cream-lion.sh
+        container: qc.lic_jumpy-cream-chinchilla
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-grey-cougar.sh
-        container: qc.sty_whiny-sangria-akbash
+        - /usr/bin/env sh .sqa/script.nippy-gold-stingray.sh
+        container: qc.sty_muggy-copper-mouse
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-denim-toucan.sh
-        container: qc.ver_seedy-chestnut-gopher
+        - /usr/bin/env sh .sqa/script.pasty-cardinal-monster.sh
+        container: qc.ver_snazzy-taupe-bullfrog
 timeout: 5400
