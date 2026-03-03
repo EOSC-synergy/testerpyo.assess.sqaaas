@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-dandelion-cheetah.sh
-        container: qc.acc_snappy-bistre-turtle
+        - /usr/bin/env sh .sqa/script.ugly-crimson-indri.sh
+        container: qc.acc_stuffy-flax-macaque
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-eggplant-woodlouse.sh
-        container: qc.doc_hasty-seashell-oyster
+        - /usr/bin/env sh .sqa/script.seedy-cardinal-toucan.sh
+        container: qc.doc_jumpy-bronze-dugong
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-rust-dhole.sh
-        container: qc.doc_gummy-emerald-chihuahua
+        - /usr/bin/env sh .sqa/script.frumpy-maroon-beetle.sh
+        container: qc.doc_silly-saffron-drever
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-pear-cow.sh
-        container: qc.doc_freaky-asparagus-snake
+        - /usr/bin/env sh .sqa/script.pokey-rose-lemming.sh
+        container: qc.doc_lumpy-xanthic-millipede
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-cream-lion.sh
-        container: qc.lic_jumpy-cream-chinchilla
+        - /usr/bin/env sh .sqa/script.hasty-charcoal-dane.sh
+        container: qc.lic_snappy-malachite-corgi
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-gold-stingray.sh
-        container: qc.sty_muggy-copper-mouse
+        - /usr/bin/env sh .sqa/script.pretty-orange-weasel.sh
+        container: qc.sty_foggy-sepia-tiger
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-cardinal-monster.sh
-        container: qc.ver_snazzy-taupe-bullfrog
+        - /usr/bin/env sh .sqa/script.bluesy-white-devil.sh
+        container: qc.ver_homely-xanthic-hare
 timeout: 5400
