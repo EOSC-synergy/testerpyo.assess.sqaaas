@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-crimson-indri.sh
-        container: qc.acc_stuffy-flax-macaque
+        - /usr/bin/env sh .sqa/script.tasty-pear-dachshund.sh
+        container: qc.acc_stinky-orchid-dog
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-cardinal-toucan.sh
-        container: qc.doc_jumpy-bronze-dugong
+        - /usr/bin/env sh .sqa/script.messy-sangria-avocet.sh
+        container: qc.doc_skanky-carmine-bird
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-maroon-beetle.sh
-        container: qc.doc_silly-saffron-drever
+        - /usr/bin/env sh .sqa/script.muggy-mauve-crab.sh
+        container: qc.doc_stuffy-platinum-barracuda
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-rose-lemming.sh
-        container: qc.doc_lumpy-xanthic-millipede
+        - /usr/bin/env sh .sqa/script.snippy-emerald-greyhound.sh
+        container: qc.doc_flaky-linen-bee
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-charcoal-dane.sh
-        container: qc.lic_snappy-malachite-corgi
+        - /usr/bin/env sh .sqa/script.cozy-cobalt-cuscus.sh
+        container: qc.lic_surly-white-newfoundland
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-orange-weasel.sh
-        container: qc.sty_foggy-sepia-tiger
+        - /usr/bin/env sh .sqa/script.wimpy-champagne-shark.sh
+        container: qc.sty_beady-mustard-discus
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-white-devil.sh
-        container: qc.ver_homely-xanthic-hare
+        - /usr/bin/env sh .sqa/script.skinny-maroon-baboon.sh
+        container: qc.ver_craggy-pumpkin-chinook
 timeout: 5400
