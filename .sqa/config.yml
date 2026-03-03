@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/Ophidia
+      branch: feature/pynblint
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
       branch: main
@@ -15,38 +15,42 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-thistle-seal.sh
-        container: qc.acc_blurry-wheat-newfoundland
+        - /usr/bin/env sh .sqa/script.tacky-lime-rat.sh
+        container: qc.acc_skanky-chocolate-magpie
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-lavender-moose.sh
-        container: qc.doc_gloppy-carmine-rhinoceros
+        - /usr/bin/env sh .sqa/script.bluesy-platinum-buzzard.sh
+        container: qc.doc_shaky-champagne-quoll
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-harlequin-sheepdog.sh
-        container: qc.doc_messy-zucchini-bat
+        - /usr/bin/env sh .sqa/script.sleazy-jade-yak.sh
+        container: qc.doc_flabby-salmon-kakapo
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-emerald-mouse.sh
-        container: qc.doc_gloppy-tomato-cassowary
+        - /usr/bin/env sh .sqa/script.frumpy-lime-rottweiler.sh
+        container: qc.doc_ready-cerise-bison
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-salmon-butterfly.sh
-        container: qc.lic_breezy-lemon-moorhen
+        - /usr/bin/env sh .sqa/script.foggy-maroon-gibbon.sh
+        container: qc.lic_hasty-celadon-penguin
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-yellow-dalmatian.sh
-        container: qc.sty_sunny-cerulean-peccary
+        - /usr/bin/env sh .sqa/script.stinky-aqua-spoonbill.sh
+        container: qc.sty_nerdy-maroon-dalmatian
+      github.com/PalomoIFCA/testerpyo pynblint.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.surly-linen-giraffe.sh
+        container: qc.sty_squirrely-sepia-mammoth
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-mauve-giraffe.sh
-        container: qc.ver_crabby-cerise-ibis
+        - /usr/bin/env sh .sqa/script.lanky-silver-leopard.sh
+        container: qc.ver_woozy-amethyst-ferret
 timeout: 5400
