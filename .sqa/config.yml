@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-pear-dachshund.sh
-        container: qc.acc_stinky-orchid-dog
+        - /usr/bin/env sh .sqa/script.clammy-black-eagle.sh
+        container: qc.acc_droopy-cinnamon-cheetah
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-sangria-avocet.sh
-        container: qc.doc_skanky-carmine-bird
+        - /usr/bin/env sh .sqa/script.muggy-cinnamon-warthog.sh
+        container: qc.doc_flimsy-purple-tetra
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-mauve-crab.sh
-        container: qc.doc_stuffy-platinum-barracuda
+        - /usr/bin/env sh .sqa/script.breezy-amethyst-donkey.sh
+        container: qc.doc_woolly-white-saola
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-emerald-greyhound.sh
-        container: qc.doc_flaky-linen-bee
+        - /usr/bin/env sh .sqa/script.beady-azure-gopher.sh
+        container: qc.doc_skimpy-tangerine-kakapo
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-cobalt-cuscus.sh
-        container: qc.lic_surly-white-newfoundland
+        - /usr/bin/env sh .sqa/script.homely-cerise-horse.sh
+        container: qc.lic_messy-jade-fowl
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-champagne-shark.sh
-        container: qc.sty_beady-mustard-discus
+        - /usr/bin/env sh .sqa/script.pasty-harlequin-emu.sh
+        container: qc.sty_cloudy-coral-wolverine
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-maroon-baboon.sh
-        container: qc.ver_craggy-pumpkin-chinook
+        - /usr/bin/env sh .sqa/script.squeaky-mauve-retriever.sh
+        container: qc.ver_lousy-ecru-wildebeest
 timeout: 5400
