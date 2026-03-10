@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-carmine-stingray.sh
-        container: qc.acc_snappy-emerald-oriole
+        - /usr/bin/env sh .sqa/script.snazzy-cerise-dodo.sh
+        container: qc.acc_muggy-lavender-argentino
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-teal-ladybird.sh
-        container: qc.doc_squirrely-sangria-leopard
+        - /usr/bin/env sh .sqa/script.nerdy-firebrick-kakapo.sh
+        container: qc.doc_flimsy-magnolia-mongoose
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-silver-grouse.sh
-        container: qc.doc_cheeky-linen-hedgehog
+        - /usr/bin/env sh .sqa/script.squirrely-pink-orangutan.sh
+        container: qc.doc_beady-wheat-devil
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-blue-wolfhound.sh
-        container: qc.doc_surly-taupe-mau
+        - /usr/bin/env sh .sqa/script.sleazy-smalt-bullfrog.sh
+        container: qc.doc_frumpy-lavender-oyster
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-gold-bloodhound.sh
-        container: qc.lic_homely-cinnabar-stingray
+        - /usr/bin/env sh .sqa/script.pasty-cardinal-impala.sh
+        container: qc.lic_messy-amaranth-russel
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-sepia-quokka.sh
-        container: qc.sty_chummy-fuchsia-stoat
+        - /usr/bin/env sh .sqa/script.zippy-orange-zorse.sh
+        container: qc.sty_cozy-goldenrod-chinchilla
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-heliotrope-otter.sh
-        container: qc.ver_squirrely-cerise-squirt
+        - /usr/bin/env sh .sqa/script.snippy-olivine-grouse.sh
+        container: qc.ver_squeaky-peach-armadillo
 timeout: 5400
