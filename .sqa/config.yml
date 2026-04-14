@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-green-elephant.sh
-        container: qc.acc_chewy-sepia-terrier
+        - /usr/bin/env sh .sqa/script.skimpy-saffron-quokka.sh
+        container: qc.acc_pasty-xanthic-giraffe
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-olive-boar.sh
-        container: qc.doc_jumpy-burgundy-audemer
+        - /usr/bin/env sh .sqa/script.bluesy-teal-hamster.sh
+        container: qc.doc_breezy-scarlet-fly
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-alizarin-okapi.sh
-        container: qc.doc_lumpy-violet-gar
+        - /usr/bin/env sh .sqa/script.stuffy-lime-toucan.sh
+        container: qc.doc_lumpy-cornflower-discus
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-puce-axolotl.sh
-        container: qc.doc_dorky-ruby-snake
+        - /usr/bin/env sh .sqa/script.skinny-seashell-magpie.sh
+        container: qc.doc_tacky-lime-lion
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-magenta-leopard.sh
-        container: qc.lic_slaphappy-tangerine-gorilla
+        - /usr/bin/env sh .sqa/script.snappy-orchid-vulture.sh
+        container: qc.lic_flaky-apricot-mammoth
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-magenta-gharial.sh
-        container: qc.sty_woozy-lilac-penguin
+        - /usr/bin/env sh .sqa/script.baggy-blue-bear.sh
+        container: qc.sty_breezy-ochre-dragonfly
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-white-vulture.sh
-        container: qc.ver_foggy-purple-moth
+        - /usr/bin/env sh .sqa/script.nerdy-periwinkle-gopher.sh
+        container: qc.ver_pretty-chestnut-wasp
 timeout: 5400
