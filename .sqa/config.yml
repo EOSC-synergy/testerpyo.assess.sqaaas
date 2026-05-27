@@ -15,42 +15,42 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.cerulean_brave_beaver.sh
-        container: qc.acc_chocolate_jubilant_gibbon
+        - /usr/bin/env sh .sqa/script.cerulean_industrious_dhole.sh
+        container: qc.acc_raven_bright_rattlesnake
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ecru_humorous_crane.sh
-        container: qc.doc_paprika_apprehensive_peacock
+        - /usr/bin/env sh .sqa/script.caramel_diligent_chinchilla.sh
+        container: qc.doc_puce_anxious_chimpanzee
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.lagoon_mysterious_penguin.sh
-        container: qc.doc_chartreuse_intuitive_marmoset
+        - /usr/bin/env sh .sqa/script.copper_impulsive_kingfisher.sh
+        container: qc.doc_thistle_stubborn_nighthawk
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cherry_mature_raven.sh
-        container: qc.doc_apricot_methodical_seahorse
+        - /usr/bin/env sh .sqa/script.pumpkin_vibrant_komodo.sh
+        container: qc.doc_iris_anxious_orca
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sepia_diligent_boa.sh
-        container: qc.lic_goldenrod_stoic_camel
+        - /usr/bin/env sh .sqa/script.periwinkle_flexible_dugong.sh
+        container: qc.lic_mulberry_hopeful_lobster
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flamingo_sweet_gibbon.sh
-        container: qc.sty_peach_passionate_catfish
+        - /usr/bin/env sh .sqa/script.cream_visionary_capybara.sh
+        container: qc.sty_bone_reserved_koala
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.thunder_motivated_otter.sh
-        container: qc.sty_mahogany_philosophical_swan
+        - /usr/bin/env sh .sqa/script.cream_devoted_capybara.sh
+        container: qc.sty_mahogany_amiable_raccoon
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wisteria_independent_platypus.sh
-        container: qc.ver_salmon_silly_viper
+        - /usr/bin/env sh .sqa/script.salmon_thoughtful_salamander.sh
+        container: qc.ver_lemon_assured_elephant
 timeout: 5400
