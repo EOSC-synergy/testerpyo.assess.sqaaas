@@ -15,42 +15,42 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.cerulean_industrious_dhole.sh
-        container: qc.acc_raven_bright_rattlesnake
+        - /usr/bin/env sh .sqa/script.strawberry_savvy_seahorse.sh
+        container: qc.acc_onyx_feisty_jellyfish
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.caramel_diligent_chinchilla.sh
-        container: qc.doc_puce_anxious_chimpanzee
+        - /usr/bin/env sh .sqa/script.gamboge_smart_walrus.sh
+        container: qc.doc_steel_sad_mandrill
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.copper_impulsive_kingfisher.sh
-        container: qc.doc_thistle_stubborn_nighthawk
+        - /usr/bin/env sh .sqa/script.rose_feisty_llama.sh
+        container: qc.doc_cobalt_outgoing_elephant
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pumpkin_vibrant_komodo.sh
-        container: qc.doc_iris_anxious_orca
+        - /usr/bin/env sh .sqa/script.lime_pensive_boa.sh
+        container: qc.doc_magenta_authentic_snail
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.periwinkle_flexible_dugong.sh
-        container: qc.lic_mulberry_hopeful_lobster
+        - /usr/bin/env sh .sqa/script.crimson_bubbly_manta.sh
+        container: qc.lic_rust_perky_kangaroo
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerpyo jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cream_visionary_capybara.sh
-        container: qc.sty_bone_reserved_koala
+        - /usr/bin/env sh .sqa/script.navy_understanding_starfish.sh
+        container: qc.sty_cyan_clever_kookaburra
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cream_devoted_capybara.sh
-        container: qc.sty_mahogany_amiable_raccoon
+        - /usr/bin/env sh .sqa/script.periwinkle_restless_eel.sh
+        container: qc.sty_mango_dramatic_quail
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.salmon_thoughtful_salamander.sh
-        container: qc.ver_lemon_assured_elephant
+        - /usr/bin/env sh .sqa/script.pine_confused_mongoose.sh
+        container: qc.ver_goldenrod_shrewd_rattlesnake
 timeout: 5400
