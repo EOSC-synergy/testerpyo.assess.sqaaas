@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/pynblint_fix
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerpyo:
       branch: main
@@ -15,42 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.strawberry_savvy_seahorse.sh
-        container: qc.acc_onyx_feisty_jellyfish
+        - /usr/bin/env sh .sqa/script.maroon_respectful_frog.sh
+        container: qc.acc_glacier_thoughtful_gazelle
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.gamboge_smart_walrus.sh
-        container: qc.doc_steel_sad_mandrill
+        - /usr/bin/env sh .sqa/script.rose_eccentric_chameleon.sh
+        container: qc.doc_cerise_empathetic_spren
       github.com/PalomoIFCA/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.rose_feisty_llama.sh
-        container: qc.doc_cobalt_outgoing_elephant
+        - /usr/bin/env sh .sqa/script.ginger_candid_mongoose.sh
+        container: qc.doc_sunset_calm_ocelot
       github.com/PalomoIFCA/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lime_pensive_boa.sh
-        container: qc.doc_magenta_authentic_snail
+        - /usr/bin/env sh .sqa/script.denim_agile_cockatoo.sh
+        container: qc.doc_lapis_spirited_horse
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.crimson_bubbly_manta.sh
-        container: qc.lic_rust_perky_kangaroo
+        - /usr/bin/env sh .sqa/script.gray_fierce_hare.sh
+        container: qc.lic_wheat_agile_roc
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerpyo jsonlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.navy_understanding_starfish.sh
-        container: qc.sty_cyan_clever_kookaburra
       github.com/PalomoIFCA/testerpyo pynblint.py:
         commands:
-        - /usr/bin/env sh .sqa/script.periwinkle_restless_eel.sh
-        container: qc.sty_mango_dramatic_quail
+        - /usr/bin/env sh .sqa/script.slate_focused_kingfisher.sh
+        container: qc.sty_linen_lively_griffin
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pine_confused_mongoose.sh
-        container: qc.ver_goldenrod_shrewd_rattlesnake
+        - /usr/bin/env sh .sqa/script.cinnamon_sweet_orca.sh
+        container: qc.ver_ochre_brave_snail
 timeout: 5400
